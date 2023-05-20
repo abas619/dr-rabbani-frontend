@@ -1,0 +1,109 @@
+/*#region ----------------- Forms */
+.inputgroup {
+  margin-bottom: 16px;
+  label {
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+    color: $textGrey;
+  }
+  .input {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid $borderColor;
+    background-color: $background;
+    padding: 5px 20px;
+    color: $textDark;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+      background-color: white;
+    }
+  }
+}
+
+.select-group {
+  position: relative;
+  margin-bottom: 1.2rem;
+  label {
+    font-size: 13px;
+    font-weight: 400;
+    color: $textDark;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .form-select {
+    height: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    border-color: $borderColor;
+    &:hover {
+      box-shadow: none;
+      border-color: $textSilver;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $primary;
+    }
+  }
+}
+
+.textarea-group {
+  .textarea {
+    width: 100%;
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    color: $textDark;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      border-color: $textSilver;
+    }
+    &:focus {
+      border-color: $primary;
+    }
+  }
+}
+
+.radio-group {
+  margin: 16px 0;
+  @include displayFlex(flex, center, flex-start);
+  h6 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $textDark;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  .radio-inner {
+    @include displayFlex(flex, center, flex-start);
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+  .form-check {
+    margin: 0 0 0 30px;
+    cursor: pointer;
+    .form-check-input,
+    .form-check-label {
+      cursor: pointer;
+    }
+    .form-check-input {
+      &:checked {
+        background-color: $secondary;
+        border-color: $secondary;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+/*#endregion -------------- Forms */

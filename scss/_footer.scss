@@ -1,0 +1,183 @@
+/*#region ----------------- Footer */
+.footer {
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  margin-top: 60px;
+  padding: 80px 0 0 0;
+  position: relative;
+  .footer-top {
+    @include displayFlex(flex, center, center);
+    flex-wrap: wrap;
+    .logo {
+      flex: 0 0 40%;
+      width: 40%;
+      a {
+        display: grid;
+        grid-template-columns: 100px auto;
+        align-content: center;
+        .thumb {
+          img {
+            width: 100%;
+          }
+        }
+        .info {
+          @include displayFlex(flex, flex-start, center);
+          flex-direction: column;
+          padding-right: 20px;
+          h6 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: $textDark;
+          }
+          p {
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 0;
+            color: $textGrey;
+          }
+        }
+      }
+    }
+    .links {
+      flex: 0 0 35%;
+      width: 35%;
+      padding-right: 20px;
+      ul {
+        @include displayFlex(flex, center, flex-start);
+        flex-wrap: wrap;
+        li {
+          flex: 0 0 50%;
+          width: 50%;
+          font-size: 14px;
+          font-weight: 400;
+          margin: 5px 0;
+          a {
+            color: $textGrey;
+          }
+          .mdi {
+            font-size: 20px;
+            position: relative;
+            top: 4px;
+            margin-left: 5px;
+            color: $secondary;
+          }
+          &:hover {
+            a {
+              color: $secondary;
+            }
+          }
+        }
+      }
+    }
+    .certificate {
+      flex: 0 0 25%;
+      width: 25%;
+      ul {
+        @include displayFlex(flex, center, flex-end);
+        li {
+          margin: 5px;
+          a {
+            width: 80px;
+            height: 80px;
+            display: block;
+          }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer-contact {
+    border-top: 1px solid $borderColor;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    @include displayFlex(flex, center, flex-end);
+    flex-wrap: wrap;
+    .phone,
+    .socials {
+      flex: 0 0 30%;
+      width: 30%;
+    }
+    .address {
+      flex: 0 0 40%;
+      width: 40%;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 15px;
+      color: $textSilver;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: $textDark;
+      margin-bottom: 0;
+    }
+    .socials {
+      ul {
+        @include displayFlex(flex, center, flex-start);
+        li {
+          width: 24px;
+          height: 24px;
+          margin: 2px 6px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer-tags {
+    background-color: $background_light;
+    border-radius: 0 0 30px 30px;
+    padding: 20px 0;
+    h6 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $textGrey;
+      margin-bottom: 20px;
+    }
+    ul {
+      @include displayFlex(flex, center, flex-start);
+      flex-wrap: wrap;
+      li {
+        white-space: nowrap;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 5px;
+        a {
+          border-radius: 40px;
+          padding: 5px 10px;
+          display: block;
+          color: $textGrey;
+          background-color: rgba($color: black, $alpha: 0.1);
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            background-color: $secondary;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background-color: $textGrey;
+    padding: 15px 0;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 575px) {
+}
+
+/*#endregion -------------- Footer */

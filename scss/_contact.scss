@@ -1,0 +1,123 @@
+/*#region ----------------- Contact Us */
+.contact-section {
+  margin: 40px 0 100px 0;
+  .section-inner {
+    background-color: white;
+    border-radius: 0 30px 30px 30px;
+    padding: 50px;
+  }
+  .my-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+  .call-content {
+    padding-left: 30px;
+    .btns-group {
+      margin-top: 30px;
+    }
+  }
+  .form-content {
+    margin-top: 20px;
+  }
+  .img-content {
+    .img-inner {
+      height: 400px;
+      width: 100%;
+      background-image: url(../images/customer-service.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 0 25px 25px 25px;
+      position: relative;
+      @include displayFlex(flex, center, center);
+      padding: 20px;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: $secondary, $alpha: 0.85);
+        border-radius: 0 25px 25px 25px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        width: 15px;
+        height: 62px;
+        background-image: url(../images/dots-h.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      h6 {
+        width: 50%;
+        color: white;
+        position: relative;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact-section {
+    .section-inner {
+      padding: 40px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contact-section {
+    .section-inner {
+      padding: 30px;
+    }
+    .my-row {
+      grid-template-columns: 100%;
+    }
+    .call-content {
+      padding-left: 0;
+      padding-bottom: 20px;
+    }
+    .img-content {
+      .img-inner {
+        height: 300px;
+        h6 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .contact-section {
+    .section-inner {
+      padding: 30px 20px 20px 20px;
+    }
+    .call-content {
+      .btns-group {
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+    }
+    .img-content {
+      .img-inner {
+        height: 200px;
+        h6 {
+          font-size: 14px;
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+/*#endregion -------------- Contact Us */

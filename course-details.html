@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fa" class="no-js" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffb200" />
+    <meta name="msapplication-navbutton-color" content="#ffb200">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffb200">
+    <title>Dr. Rabani | نام دوره</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/main.css">
+
+    <!-- Font Icons -->
+    <link href="css/uicons-regular-rounded.css" rel="stylesheet" type="text/css" />
+    <link href="css/uicons-solid-rounded.css" rel="stylesheet" type="text/css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/small-icon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo-114x114.png" />
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="myNavbar">
+        <div class="container-lg">
+            <div class="header-inner">
+                <div class="mobile-links">
+                    <button type="button" class="btn-mobile-menu"><i class="fi fi-rr-menu-burger"></i></button>
+                    <!-- Sidebar Menu -->
+                    <div id="sidebar-menu">
+                        <div class="sidebar-header">
+                            <div class="sidebar-logo">
+                                <a href="index.html">
+                                    <img src="images/logo.png" class="sidebarlogo" alt="Grand Bimeh Logo">
+                                </a>
+                            </div>
+                            <div class="sidebar-close">
+                                <button class="btn-close-menu"><i class="fi fi-rr-cross"></i></button>
+                            </div>
+                        </div>
+                        <div class="sidebar-sign">
+                            <!-- برای وقتی که ورود/ثبت نام میخواد انجام بده -->
+                            <div class="sign">
+                                <button type="button" class="btn btn-secondary icon-right" data-toggle="modal"
+                                    data-target="#modal-sign">
+                                    <i class="fi fi-rr-sign-out"></i>
+                                    <span>ورود / ثبت نام</span>
+                                </button>
+                            </div>
+                            <!-- برای وقتی که ثبت نام/ ورود کرد -->
+                            <!-- <div class="login">
+                                <a href="#"><span>سمیر دغاغله</span><i class="fi fi-rr-angle-small-left"></i></a>
+                            </div> -->
+                        </div>
+                        <ul class="category-list">
+                            <li class="item"><a href="#">صفحه اصلی</a></li>
+                            <li class="item"><a href="#">بلاگ</a></li>
+                            <li class="item"><a href="#">درباره مدرس</a></li>
+                            <li class="item"><a href="#">تماس با ما</a></li>
+                        </ul>
+                        <div class="collapse-item">
+                            <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-category-01" aria-expanded="false"
+                                aria-controls="collapse-category-01">
+                                <span class="name">دوره‌ها</span>
+                                <span class="icon"></span>
+                            </button>
+                            <div class="collapse" id="collapse-category-01">
+                                <div class="card">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">مشاهده همه</span>
+                                                <span class="desc"><i class="fi fi-rr-angle-small-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">دوره 1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">دوره 2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay-back"></div>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="links">
+                    <ul class="link-list">
+                        <li class="item"><a href="index.html">صفحه اصلی</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">دوره‌ها<i class="fi fi-rr-angle-small-down"></i></a>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="#">تخصص ۱</a></li>
+                                <li class="sub-item"><a href="#">تخصص ۲</a></li>
+                                <li class="sub-item"><a href="#">تخصص ۳</a></li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="blog-list.html">بلاگ</a>
+                        </li>
+                        <li class="item"><a href="about.html">درباره مدرس</a></li>
+                        <li class="item"><a href="contact-us.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="nav-action">
+                    <div class="search" id="desktop-search-content">
+                        <button type="button" class="btn-show-search" id="btn-desktop-search"><i
+                                class="fi fi-rr-search"></i></button>
+                        <div class="search-content">
+                            <div class="search-inputgroup">
+                                <input type="text" class="input" id="search-input" placeholder="جستجو...">
+                                <button type="button" class="btn-search-close"><i class="fi fi-rr-cross"></i></button>
+                                <button type="submit" class="btn-search-sumbit"><i class="fi fi-rr-search"></i></button>
+                            </div>
+                            <div class="result" id="search-result">
+                                <ul>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-apps"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-search"></i>عنوان جستجو</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-login">
+
+                        <!-- Sign -->
+                        <!-- <div class="sign">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sign">
+                                <span>ورود</span>
+                                <span>ثبت نام</span>
+                            </button>
+                        </div> -->
+
+                        <!-- Login -->
+                        <div class="login">
+                            <div class="user-link">
+                                <div class="icon"><i class="fi fi-rr-user"></i></div>
+                            </div>
+                            <ul class="user-menu">
+                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>پروفایل
+                                        من</a></li>
+                                <li><a href="#"><i class="fi fi-rr-computer"></i>دوره‌های من</a>
+                                </li>
+                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>پرداخت ها</a></li>
+                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>خروج</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Hero Information -->
+    <div class="course-details-hero">
+        <div class="container">
+            <div class="section-inner">
+                <div class="course-info">
+                    <div class="teacher-img">
+                        <div class="img-inner">
+                            <img src="images/teacher-img.png" alt="dr-rabani">
+                        </div>
+                    </div>
+                    <div class="data">
+                        <h2 class="course-name">دوره تربیت حرفه‌ای کوچ کسب و کار</h2>
+                        <h3 class="teacher-name"><span>مدرس : </span>محمد مهدی ربانی</h3>
+                        <div class="property">
+                            <div class="card-property">
+                                <div class="card-inner">
+                                    <div class="icon"><i class="fi fi-rr-computer"></i></div>
+                                    <div class="info">
+                                        <h5>نوع دوره</h5>
+                                        <h6>غیرحضوری</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-property">
+                                <div class="card-inner">
+                                    <div class="icon"><i class="fi fi-rr-calendar"></i></div>
+                                    <div class="info">
+                                        <h5>طول دوره</h5>
+                                        <h6>2 ماه</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-property">
+                                <div class="card-inner">
+                                    <div class="icon"><i class="fi fi-rr-diploma"></i></div>
+                                    <div class="info">
+                                        <h5>دوره</h5>
+                                        <h6>یازدهم</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                            <a href="#" class="btn btn-secondary">ثبت نام</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Course -->
+    <div class="about-course-section">
+        <div class="container">
+            <div class="section-inner">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-content">
+                            <div class="page-title text-right">
+                                <div class="title-inner">
+                                    <h1>درباره دوره</h1>
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <p>شما می‌توانید با گذراندن این دوره در طول ۲ماه به یک کوچ حرفه‌ای تبدیل شوید و درآمد
+                                    خود را چند برابر نقشه راه و نحوه‌ی
+                                    کسب درآمد از شصت میلیون تا شش میلیارد تومان در سال را از کوچینگ، کاملا مشخص و شفاف و
+                                    طبق تجربه شخصی محمد مهدی ربانی کوچ
+                                    و مربی کسب و کار بیاموزید تا در مدت زمان محدود از استاد خود جلو بزنید و به درآمدی
+                                    بسیار بالا برسید.</p>
+                                <p>دستورالعمل‌ها و آموزش گام به گام را بدون پنهان کاری در مورد چگونگی کسب درآمد پایدار
+                                    از حرفه مربیگری دریافت کنید. از صرف
+                                    ساعت‌ها تلاش بی نتیجه برای جذب مشتریان خداحافظی کنید. کنید</p>
+                            </div>
+                            <div class="btns-group">
+                                <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-content">
+                            <div class="video-inner">
+                                <video controls poster="images/video-poster.png">
+                                    <source src="video/ocean.mp4" type="video/mp4">
+                                    <source
+                                        src="https://download.blender.org/demo/movies/BBB/bbb_sunflower_1080p_30fps_normal.mp4"
+                                        type="video/ogg">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Topics -->
+    <div class="course-topics-section">
+        <div class="container">
+            <div class="section-inner">
+                <div class="page-title text-right">
+                    <div class="title-inner">
+                        <h1>سرفصل های دوره</h1>
+                    </div>
+                </div>
+                <ul class="topics-list">
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        راه‌اندازی کسب و کار کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        اعتمادزایی، مذاکره، نهایی‌سازی و بستن قرارداد
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        آینده صنعت کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        ارزیابی عملکرد، افزایش رضایت و وفادارسازی مشتری
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        چطور بدون تجربه قرارداد ببندیم؟
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        قیمت‌گذاری خدمات کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        بازاریابی خدمات کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        رشد و توسعه خود به عنوان یک کوچ حرفه‌ای
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        برندسازی برای کوچ‌های حرفه‌ای
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        چگونه به یک کوچ گرانبها تبدیل شویم؟
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        فروش خدمات کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        مسیر پیشرفت حرفه‌ای برای کوچ‌ها
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        ارتباطات در کوچینگ
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fi fi-rr-check"></i></span>
+                        مهارت‌های یک کوچ حرفه‌ای
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Comments -->
+    <div class="user-comments-section">
+        <div class="container">
+            <div class="page-title">
+                <div class="title-inner">
+                    <h1>نظر برخی از دانش‌پذیران دوره</h1>
+                </div>
+            </div>
+            <div class="section-inner">
+                <div class="swiper swiper-comments">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-comment">
+                                <div class="card-inner">
+                                    <div class="thumb">
+                                        <div class="img-inner">
+                                            <img src="https://via.placeholder.com/120x120/ccc.png" alt="user-img">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>خانم اکرم خمسه</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
+                                            ویدیو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-comment">
+                                <div class="card-inner">
+                                    <div class="thumb">
+                                        <div class="img-inner">
+                                            <img src="https://via.placeholder.com/120x120/ccc.png" alt="user-img">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>خانم حوریه جهانی</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
+                                            ویدیو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-comment">
+                                <div class="card-inner">
+                                    <div class="thumb">
+                                        <div class="img-inner">
+                                            <img src="https://via.placeholder.com/120x120/ccc.png" alt="user-img">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>آقای امین حسابی</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
+                                            ویدیو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-comment">
+                                <div class="card-inner">
+                                    <div class="thumb">
+                                        <div class="img-inner">
+                                            <img src="https://via.placeholder.com/120x120/ccc.png" alt="user-img">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>آقای احسان لاجوردی</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
+                                            ویدیو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-comment">
+                                <div class="card-inner">
+                                    <div class="thumb">
+                                        <div class="img-inner">
+                                            <img src="https://via.placeholder.com/120x120/ccc.png" alt="user-img">
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <h4>آقای امیرحسین پورمند</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
+                                            ویدیو</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="btns-group">
+                    <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Status -->
+    <div class="course-status-section">
+        <div class="container">
+            <div class="section-inner">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-content">
+                            <div class="page-title text-right">
+                                <div class="title-inner">
+                                    <h1>آمار و ارقام</h1>
+                                </div>
+                            </div>
+                            <div class="status-cards-group">
+                                <div class="card-status color-1">
+                                    <div class="card-inner">
+                                        <div class="icon"><i class="fi fi-rr-computer"></i></div>
+                                        <div class="info">
+                                            <h2>10</h2>
+                                            <h4>دوره برگزار شده</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-status color-2">
+                                    <div class="card-inner">
+                                        <div class="icon"><i class="fi fi-rr-users"></i></div>
+                                        <div class="info">
+                                            <h2>969</h2>
+                                            <h4>دانش پذیر</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-status color-3">
+                                    <div class="card-inner">
+                                        <div class="icon"><i class="fi fi-rr-books"></i></div>
+                                        <div class="info">
+                                            <h2>16</h2>
+                                            <h4>درس</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-status color-4">
+                                    <div class="card-inner">
+                                        <div class="icon"><i class="fi fi-rr-clock"></i></div>
+                                        <div class="info">
+                                            <h2>32</h2>
+                                            <h4>ساعت</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btns-group">
+                                <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-content">
+                            <div class="img-inner">
+                                <img src="https://via.placeholder.com/500x500/ccc.png" alt="img-name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Suitable Section -->
+    <div class="suitable-section">
+        <div class="container">
+            <div class="section-inner">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-1 order-md-2 order-2">
+                        <div class="image-content">
+                            <div class="img-inner">
+                                <img src="https://via.placeholder.com/500x500/ccc.png" alt="img-name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-2 order-md-1 order-1">
+                        <div class="text-content">
+                            <div class="page-title text-right">
+                                <div class="title-inner">
+                                    <h1>این دوره برای چه کسانی مناسب است؟</h1>
+                                </div>
+                            </div>
+                            <div class="list-items">
+                                <div class="item-row">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="images/thumb-up.svg" alt="icon">
+                                        </div>
+                                        <div class="info">
+                                            <p>این دوره یا به عبارت بهتر جلسات انتقال تجربه برای هر مربی یا علاقمند به
+                                                حرفه مربیگری است که می‌خواهد راهی خوب و بدون
+                                                اشتباه برای یافتن مشتریانی پیدا کند که از پس هزینه خدمات کوچینگ برآیند.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="images/thumb-up.svg" alt="icon">
+                                        </div>
+                                        <div class="info">
+                                            <p>این دوره برای مربیان، کارشناسان و مدرسانی است که می خواهند درآمد و
+                                                تاثیرگذاری خود را به سطح بعدی ببرند!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-row">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <img src="images/thumb-up.svg" alt="icon">
+                                        </div>
+                                        <div class="info">
+                                            <p>اگر مایلید سوار بر موج رونق کوچینگ شوید و با دانش خود بر زندگی مردم تأثیر
+                                                بگذارید، این دوره برای شما مناسب است. شما می
+                                                توانید مربی شناخته شده، ثروتمند و پردرآمدی شوید که در زندگی قهرمانان نقش
+                                                زیادی داشته باشد.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+        <div class="container">
+            <div class="section-inner">
+                <div class="my-row align-items-center">
+                    <div class="call-content">
+                        <div class="page-title text-right">
+                            <div class="title-inner">
+                                <h1>همین الان تماس بگیر</h1>
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <div class="inputgroup">
+                                <label>نام و نام خانوادگی شما</label>
+                                <input type="text" class="input" placeholder="">
+                            </div>
+                            <div class="inputgroup">
+                                <label>شماره همراه</label>
+                                <input type="number" class="input" placeholder="">
+                            </div>
+                            <div class="inputgroup">
+                                <label>ایمیل</label>
+                                <input type="email" class="input" placeholder="">
+                            </div>
+                        </div>
+                        <div class="btns-group">
+                            <button class="btn btn-secondary">ارسال اطلاعات</button>
+                            <button class="btn btn-primary">دریافت مشاوره رایگان</button>
+                        </div>
+                    </div>
+                    <div class="img-content">
+                        <div class="img-inner">
+                            <h6>همکاران ما آماده پاسخ به سوالات شما و ارائه مشاوره رایگان هستند</h6>
+                            <!-- <div class="text-info">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer d-none">
+        <div class="container">
+            <button type="button" id="btn-scroll-top"><i class="mdi mdi-chevron-up-circle"></i></button>
+            <div class="footer-inner">
+                <div class="footer-top">
+                    <div class="logo">
+                        <a href="#">
+                            <div class="thumb">
+                                <img src="images/logo.png" alt="logo">
+                            </div>
+                            <div class="info">
+                                <h6>عصب پژوهان فردا</h6>
+                                <p>بزرگترین سایت در زمینه نقشه مغزی (QEEG)</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li><a href="#"><i class="mdi mdi-check-decagram-outline"></i>راهنمای ثبت نام</a></li>
+                            <li><a href="#"><i class="mdi mdi-information-outline"></i>درباره‌ ما</a></li>
+                            <li><a href="#"><i class="mdi mdi-help-circle-outline"></i>پرسش‌های شما</a></li>
+                            <li><a href="#"><i class="mdi mdi-phone-in-talk-outline"></i>تماس با ما</a></li>
+                        </ul>
+                    </div>
+                    <div class="certificate">
+                        <ul>
+                            <li><a href="#"><img src="https://via.placeholder.com/100x100/ccc.png" alt="e-nemad"></a>
+                            </li>
+                            <li><a href="#"><img src="https://via.placeholder.com/100x100/ccc.png" alt="e-nemad"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contact">
+                    <div class="phone">
+                        <h5 class="title">تلفن پشتیبانی و تماس</h5>
+                        <p>۰۲۱-۱۲۳۴۵۶۷۸ - ۱۲۳۴۵۷۸۹۴</p>
+                    </div>
+                    <div class="address">
+                        <h5 class="title">آدرس</h5>
+                        <p>قزوین، خیابان خیام شمالی نرسیده به جنوبی، بن بست 6</p>
+                    </div>
+                    <div class="socials">
+                        <h5 class="title">آدرس ما در فضای مجازی</h5>
+                        <ul>
+                            <!-- <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/aparat.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/telegram.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/image-23.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/image-24.png" alt=""></a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-tags">
+            <div class="container">
+                <h6>کلمات کلیدی</h6>
+                <ul>
+                    <li><a href="#">نقشه مغزی</a></li>
+                    <li><a href="#">امواج مغزی</a></li>
+                    <li><a href="#">عصب شناسان</a></li>
+                    <li><a href="#">روانشناسان</a></li>
+                    <li><a href="#">نورولوژی</a></li>
+                    <li><a href="#">الکتروفیزیولوژی</a></li>
+                    <li><a href="#">توانبخشی</a></li>
+                    <li><a href="#">الکتروفیزیولوژی</a></li>
+                    <li><a href="#">روانشناسان</a></li>
+                    <li><a href="#">امواج مغزی</a></li>
+                    <li><a href="#">الکتروفیزیولوژی</a></li>
+                    <li><a href="#">روانشناسان</a></li>
+                    <li><a href="#">امواج مغزی</a></li>
+                    <li><a href="#">نقشه مغزی</a></li>
+                    <li><a href="#">عصب شناسان</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>تمامی حقوق این وب سایت متعلق به عصب پژوهان فردا بوده و فعالیت‌های این سایت تابع قوانین و
+                مقررات جمهوری اسلامی ایران است</span>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="plugins/swiperjs/swiper-initial.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

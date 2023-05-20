@@ -1,0 +1,327 @@
+/*#region ----------------- Course Details */
+.card-property {
+  padding: 0 6px 15px 6px;
+  .card-inner {
+    overflow: hidden;
+    position: relative;
+    background-color: $background;
+    border: 1px solid $borderColor;
+    border-radius: 12px;
+    padding: 15px;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .icon {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    @include displayFlex(flex, center, center);
+    font-size: 40px;
+    color: rgba($color: $textSilver, $alpha: 0.4);
+    transition: all 0.3s ease-in-out;
+  }
+  .info {
+    text-align: center;
+    h5 {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: $textGrey;
+    }
+    h6 {
+      font-size: 16px;
+      margin-bottom: 0;
+      color: $textDark;
+    }
+  }
+  &:hover {
+    .card-inner {
+      background-color: white;
+    }
+    .icon {
+      color: rgba($color: $secondary, $alpha: 0.3);
+    }
+    .info {
+      h6 {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.card-comment {
+  .card-inner {
+    background-color: white;
+    border-radius: 0 20px 20px 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 48px;
+      height: 33px;
+      background-image: url(../images/dots-top-left.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      opacity: 0.2;
+    }
+  }
+  .thumb {
+    padding: 20px 0 6px 0;
+    width: 110px;
+    margin: 0 auto;
+    position: relative;
+    .img-inner {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      &::before {
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 0;
+        transform: translateX(50%);
+        width: calc(100% + 12px);
+        height: 100%;
+        border: 2px solid $borderColor;
+        border-top: 0;
+        border-radius: 0 0 90px 90px;
+        transition: all 0.3s ease-in-out;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  .info {
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    h4 {
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: $textDark;
+      @include textTruncate(1);
+    }
+    .btn-secondary {
+      padding: 0.4rem 0.8rem;
+      font-size: 14px;
+      background-color: rgba($color: $secondary, $alpha: 0.1);
+      color: $secondary;
+      .fi {
+        line-height: 0;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+      &:hover {
+        background-color: $primary;
+        color: $secondary;
+      }
+    }
+  }
+  &:hover {
+    .thumb {
+      .img-inner {
+        &::before {
+          border-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.card-status {
+  padding: 8px;
+  transition: all 0.3s ease-in-out;
+  .card-inner {
+    padding: 30px 20px;
+    border-radius: 0 20px 20px 20px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      width: 20px;
+      height: 20px;
+      background-color: $textGrey;
+      border-radius: 0 0 50px 0;
+    }
+  }
+  .icon {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    @include displayFlex(flex, center, center);
+    font-size: 30px;
+    color: $borderColor;
+  }
+  .info {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    h2 {
+      color: $textDark;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: 14px;
+      margin-bottom: 0;
+      color: $textDark;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    .card-inner {
+      box-shadow: $boxshadow;
+    }
+  }
+  &.color-1 {
+    .card-inner {
+      &::before {
+        background-color: $accent;
+      }
+    }
+    .info {
+      h2 {
+        color: $accent;
+      }
+    }
+  }
+  &.color-2 {
+    .card-inner {
+      &::before {
+        background-color: $textSilver;
+      }
+    }
+    .info {
+      h2 {
+        color: $textSilver;
+      }
+    }
+  }
+  &.color-3 {
+    .card-inner {
+      &::before {
+        background-color: $primary;
+      }
+    }
+    .info {
+      h2 {
+        color: $primary;
+      }
+    }
+  }
+  &.color-4 {
+    .card-inner {
+      &::before {
+        background-color: $secondary;
+      }
+    }
+    .info {
+      h2 {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-property {
+    .info {
+      h5 {
+        font-size: 13px;
+      }
+      h6 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .card-property {
+    .card-inner {
+      padding: 10px;
+    }
+    .icon {
+      width: 35px;
+      height: 35px;
+      font-size: 30px;
+    }
+    .info {
+      h5 {
+        font-size: 12px;
+      }
+      h6 {
+        font-size: 13px;
+      }
+    }
+  }
+  .card-status {
+    .icon {
+      width: 35px;
+      height: 35px;
+      font-size: 26px;
+    }
+    .info {
+      h2 {
+        font-size: 1.7rem;
+      }
+      h4 {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .card-property {
+    padding: 0 3px 6px 3px;
+    .card-inner {
+      padding: 10px;
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      font-size: 24px;
+    }
+    .info {
+      h5 {
+        font-size: 11px;
+      }
+      h6 {
+        font-size: 12px;
+      }
+    }
+  }
+  .card-status {
+    .card-inner {
+      padding: 20px 15px;
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .icon {
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+    }
+    .info {
+      h2 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+/*#endregion -------------- Course Details */
