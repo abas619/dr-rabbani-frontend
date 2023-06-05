@@ -37,9 +37,9 @@
           transform: translateY(0);
         }
         a {
-          font-size: 14px;
-          font-weight: 500;
-          color: $textGrey;
+          font-size: 16px;
+          font-weight: 400;
+          color: $textDark;
           padding: 15px 0;
           transition: all 0.2s ease-in;
           display: block;
@@ -81,7 +81,7 @@
           }
           .sub-item {
             a {
-              font-size: 14px;
+              font-size: 16px;
               font-weight: 400;
               display: block;
               padding: 8px;
@@ -214,7 +214,6 @@
 }
 
 #desktop-search-content {
-  margin-right: auto;
   width: 100%;
   position: relative;
   margin-left: 15px;

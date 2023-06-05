@@ -145,7 +145,7 @@
     video,
     iframe {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 20px;
       display: inline-block;
     }
   }
@@ -430,11 +430,6 @@
         }
       }
     }
-    .item-row {
-      &::before {
-        right: -30px;
-      }
-    }
   }
 }
 @media (max-width: 992px) {
@@ -495,11 +490,6 @@
       .img-inner {
         width: 340px;
         height: 340px;
-        // &::after {
-        //   right: -50px;
-        //   width: 40px;
-        //   height: 98px;
-        // }
       }
     }
     .text-content {

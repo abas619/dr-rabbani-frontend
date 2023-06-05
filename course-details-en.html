@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ffb200" />
     <meta name="msapplication-navbutton-color" content="#ffb200">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffb200">
-    <title>Dr. Rabani | نام دوره</title>
+    <title>Dr. Rabani | Course Name</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -18,6 +18,10 @@
     <link href="css/uicons-regular-rounded.css" rel="stylesheet" type="text/css" />
     <link href="css/uicons-solid-rounded.css" rel="stylesheet" type="text/css" />
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="images/small-icon.png" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -26,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="en">
 
     <!-- Header -->
     <header class="myNavbar">
@@ -52,8 +56,7 @@
                                 <button type="button" class="btn btn-secondary icon-right" data-toggle="modal"
                                     data-target="#modal-sign">
                                     <i class="fi fi-rr-sign-out"></i>
-                                    <span>ورود / ثبت نام</span>
-                                </button>
+                                    <span>Login / Signup
                             </div>
                             <!-- برای وقتی که ثبت نام/ ورود کرد -->
                             <!-- <div class="login">
@@ -61,16 +64,16 @@
                             </div> -->
                         </div>
                         <ul class="category-list">
-                            <li class="item"><a href="#">صفحه اصلی</a></li>
-                            <li class="item"><a href="#">بلاگ</a></li>
-                            <li class="item"><a href="#">درباره مدرس</a></li>
-                            <li class="item"><a href="#">تماس با ما</a></li>
+                            <li class="item"><a href="#">Home</a></li>
+                            <li class="item"><a href="#">Blog</a></li>
+                            <li class="item"><a href="#">About Teacher</a></li>
+                            <li class="item"><a href="#">Contact us</a></li>
                         </ul>
                         <div class="collapse-item">
                             <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse-category-01" aria-expanded="false"
                                 aria-controls="collapse-category-01">
-                                <span class="name">دوره‌ها</span>
+                                <span class="name">Courses</span>
                                 <span class="icon"></span>
                             </button>
                             <div class="collapse" id="collapse-category-01">
@@ -78,18 +81,18 @@
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <span class="name">مشاهده همه</span>
+                                                <span class="name">See All</span>
                                                 <span class="desc"><i class="fi fi-rr-angle-small-left"></i></span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="name">دوره 1</span>
+                                                <span class="name">Course 1</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="name">دوره 2</span>
+                                                <span class="name">Course 2</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -106,20 +109,20 @@
                 </div>
                 <div class="links">
                     <ul class="link-list">
-                        <li class="item"><a href="index.html">صفحه اصلی</a>
+                        <li class="item"><a href="index.html">Home</a>
                         </li>
                         <li class="item">
-                            <a href="#">دوره‌ها<i class="fi fi-rr-angle-small-down"></i></a>
+                            <a href="#">Courses<i class="fi fi-rr-angle-small-down"></i></a>
                             <ul class="sub-list">
-                                <li class="sub-item"><a href="#">تخصص ۱</a></li>
-                                <li class="sub-item"><a href="#">تخصص ۲</a></li>
-                                <li class="sub-item"><a href="#">تخصص ۳</a></li>
+                                <li class="sub-item"><a href="#">Course Name 1</a></li>
+                                <li class="sub-item"><a href="#">Course Name 2</a></li>
+                                <li class="sub-item"><a href="#">Course Name 3</a></li>
                             </ul>
                         </li>
-                        <li class="item"><a href="blog-list.html">بلاگ</a>
+                        <li class="item"><a href="blog-list.html">Blog</a>
                         </li>
-                        <li class="item"><a href="about.html">درباره مدرس</a></li>
-                        <li class="item"><a href="contact-us.html">تماس با ما</a></li>
+                        <li class="item"><a href="about.html">About Teacher</a></li>
+                        <li class="item"><a href="contact-us.html">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="nav-action">
@@ -128,16 +131,16 @@
                                 class="fi fi-rr-search"></i></button>
                         <div class="search-content">
                             <div class="search-inputgroup">
-                                <input type="text" class="input" id="search-input" placeholder="جستجو...">
+                                <input type="text" class="input" id="search-input" placeholder="Search...">
                                 <button type="button" class="btn-search-close"><i class="fi fi-rr-cross"></i></button>
                                 <button type="submit" class="btn-search-sumbit"><i class="fi fi-rr-search"></i></button>
                             </div>
                             <div class="result" id="search-result">
                                 <ul>
-                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-apps"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-search"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>Search subject 1</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>Search subject 2</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-apps"></i>Search subject 3</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-search"></i>Search subject 4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -147,8 +150,8 @@
                         <!-- Sign -->
                         <!-- <div class="sign">
                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sign">
-                                <span>ورود</span>
-                                <span>ثبت نام</span>
+                                <span>Login</span>
+                                <span>Signup</span>
                             </button>
                         </div> -->
 
@@ -158,12 +161,11 @@
                                 <div class="icon"><i class="fi fi-rr-user"></i></div>
                             </div>
                             <ul class="user-menu">
-                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>پروفایل
-                                        من</a></li>
-                                <li><a href="#"><i class="fi fi-rr-computer"></i>دوره‌های من</a>
+                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>My Profile</a></li>
+                                <li><a href="#"><i class="fi fi-rr-computer"></i>My Courses</a>
                                 </li>
-                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>پرداخت ها</a></li>
-                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>خروج</a></li>
+                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>Transactions</a></li>
+                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -183,15 +185,15 @@
                         </div>
                     </div>
                     <div class="data">
-                        <h2 class="course-name">دوره تربیت حرفه‌ای کوچ کسب و کار</h2>
-                        <h3 class="teacher-name"><span>مدرس : </span>محمد مهدی ربانی</h3>
+                        <h2 class="course-name">Business coaching professional training course</h2>
+                        <h3 class="teacher-name"><span>Teacher : </span>Mohammad Mehdi Rabbani</h3>
                         <div class="property">
                             <div class="card-property">
                                 <div class="card-inner">
                                     <div class="icon"><i class="fi fi-rr-computer"></i></div>
                                     <div class="info">
-                                        <h5>نوع دوره</h5>
-                                        <h6>غیرحضوری</h6>
+                                        <h5>Course type</h5>
+                                        <h6>Offline</h6>
                                     </div>
                                 </div>
                             </div>
@@ -199,8 +201,8 @@
                                 <div class="card-inner">
                                     <div class="icon"><i class="fi fi-rr-calendar"></i></div>
                                     <div class="info">
-                                        <h5>طول دوره</h5>
-                                        <h6>2 ماه</h6>
+                                        <h5>Course length</h5>
+                                        <h6>2 Months</h6>
                                     </div>
                                 </div>
                             </div>
@@ -208,15 +210,15 @@
                                 <div class="card-inner">
                                     <div class="icon"><i class="fi fi-rr-diploma"></i></div>
                                     <div class="info">
-                                        <h5>دوره</h5>
-                                        <h6>یازدهم</h6>
+                                        <h5>The period</h5>
+                                        <h6>Eleventh</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="btns-group">
-                            <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
-                            <a href="#" class="btn btn-secondary">ثبت نام</a>
+                            <a href="#" class="btn btn-primary">Get a free consultation</a>
+                            <a href="#" class="btn btn-secondary">Register</a>
                         </div>
                     </div>
                 </div>
@@ -233,22 +235,23 @@
                         <div class="text-content">
                             <div class="page-title text-right">
                                 <div class="title-inner">
-                                    <h1>درباره دوره</h1>
+                                    <h1>About the course</h1>
                                 </div>
                             </div>
                             <div class="desc">
-                                <p>شما می‌توانید با گذراندن این دوره در طول ۲ماه به یک کوچ حرفه‌ای تبدیل شوید و درآمد
-                                    خود را چند برابر نقشه راه و نحوه‌ی
-                                    کسب درآمد از شصت میلیون تا شش میلیارد تومان در سال را از کوچینگ، کاملا مشخص و شفاف و
-                                    طبق تجربه شخصی محمد مهدی ربانی کوچ
-                                    و مربی کسب و کار بیاموزید تا در مدت زمان محدود از استاد خود جلو بزنید و به درآمدی
-                                    بسیار بالا برسید.</p>
-                                <p>دستورالعمل‌ها و آموزش گام به گام را بدون پنهان کاری در مورد چگونگی کسب درآمد پایدار
-                                    از حرفه مربیگری دریافت کنید. از صرف
-                                    ساعت‌ها تلاش بی نتیجه برای جذب مشتریان خداحافظی کنید. کنید</p>
+                                <p>You can become a professional coach by completing this course in 2 months and
+                                    multiply your income with the road map and
+                                    how to earn from sixty million to six billion tomans per year from coaching,
+                                    completely clear and transparent and
+                                    according to Mohammad Mahdi's personal experience. Learn how to become a coach and
+                                    business coach to surpass your
+                                    teacher in a limited time and achieve a very high income.</p>
+                                <p>Get no-nonsense step-by-step instructions and training on how to make a steady income
+                                    from your coaching career. Say
+                                    goodbye to spending hours trying to attract customers. do</p>
                             </div>
                             <div class="btns-group">
-                                <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                                <a href="#" class="btn btn-primary">Get a free consultation</a>
                             </div>
                         </div>
                     </div>
@@ -276,65 +279,65 @@
             <div class="section-inner">
                 <div class="page-title text-right">
                     <div class="title-inner">
-                        <h1>سرفصل های دوره</h1>
+                        <h1>Course headings</h1>
                     </div>
                 </div>
                 <ul class="topics-list">
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        راه‌اندازی کسب و کار کوچینگ
+                        Setting up a coaching business
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        اعتمادزایی، مذاکره، نهایی‌سازی و بستن قرارداد
+                        Building trust, negotiating, finalizing and closing the contract
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        آینده صنعت کوچینگ
+                        The future of the coaching industry
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        ارزیابی عملکرد، افزایش رضایت و وفادارسازی مشتری
+                        Performance evaluation, increasing customer satisfaction and loyalty
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        چطور بدون تجربه قرارداد ببندیم؟
+                        How to sign a contract without experience?
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        قیمت‌گذاری خدمات کوچینگ
+                        Pricing of coaching services
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        بازاریابی خدمات کوچینگ
+                        Marketing of coaching services
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        رشد و توسعه خود به عنوان یک کوچ حرفه‌ای
+                        Grow and develop yourself as a professional coach
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        برندسازی برای کوچ‌های حرفه‌ای
+                        Branding for professional coaches
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        چگونه به یک کوچ گرانبها تبدیل شویم؟
+                        How to become a precious coach?
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        فروش خدمات کوچینگ
+                        Selling coaching services
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        مسیر پیشرفت حرفه‌ای برای کوچ‌ها
+                        Professional development path for coaches
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        ارتباطات در کوچینگ
+                        Communications in Kuching
                     </li>
                     <li>
                         <span class="icon"><i class="fi fi-rr-check"></i></span>
-                        مهارت‌های یک کوچ حرفه‌ای
+                        Skills of a professional coach
                     </li>
                 </ul>
             </div>
@@ -346,7 +349,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1>نظر برخی از دانش‌پذیران دوره</h1>
+                    <h1>Users Comments</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -361,9 +364,10 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>خانم اکرم خمسه</h4>
-                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
-                                            ویدیو</button>
+                                        <h4>Akram Khamse</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>
+                                            Watch video
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -377,9 +381,10 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>خانم حوریه جهانی</h4>
-                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
-                                            ویدیو</button>
+                                        <h4>Hoorieh Jahani</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>
+                                            Watch video
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -393,9 +398,10 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>آقای امین حسابی</h4>
-                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
-                                            ویدیو</button>
+                                        <h4>Amin Hesabi</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>
+                                            Watch video
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -409,9 +415,10 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>آقای احسان لاجوردی</h4>
-                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
-                                            ویدیو</button>
+                                        <h4>Ehsan Lageverdi</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>
+                                            Watch video
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -425,9 +432,10 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>آقای امیرحسین پورمند</h4>
-                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>مشاهده
-                                            ویدیو</button>
+                                        <h4>Amirhoesin Poormand</h4>
+                                        <button class="btn btn-secondary"><i class="fi fi-sr-play"></i>
+                                            Watch video
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -436,7 +444,7 @@
                     <div class="swiper-pagination"></div>
                 </div>
                 <div class="btns-group">
-                    <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                    <a href="#" class="btn btn-primary">Get a free consultation</a>
                 </div>
             </div>
         </div>
@@ -451,7 +459,7 @@
                         <div class="text-content">
                             <div class="page-title text-right">
                                 <div class="title-inner">
-                                    <h1>آمار و ارقام</h1>
+                                    <h1>Facts and Figures</h1>
                                 </div>
                             </div>
                             <div class="status-cards-group">
@@ -460,7 +468,7 @@
                                         <div class="icon"><i class="fi fi-rr-computer"></i></div>
                                         <div class="info">
                                             <h2>10</h2>
-                                            <h4>دوره برگزار شده</h4>
+                                            <h4>Course held</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -469,7 +477,7 @@
                                         <div class="icon"><i class="fi fi-rr-users"></i></div>
                                         <div class="info">
                                             <h2>969</h2>
-                                            <h4>دانش پذیر</h4>
+                                            <h4>Knowledgeable</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -478,7 +486,7 @@
                                         <div class="icon"><i class="fi fi-rr-books"></i></div>
                                         <div class="info">
                                             <h2>16</h2>
-                                            <h4>درس</h4>
+                                            <h4>Lesson</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -487,13 +495,13 @@
                                         <div class="icon"><i class="fi fi-rr-clock"></i></div>
                                         <div class="info">
                                             <h2>32</h2>
-                                            <h4>ساعت</h4>
+                                            <h4>Hours</h4>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="btns-group">
-                                <a href="#" class="btn btn-primary">دریافت مشاوره رایگان</a>
+                                <a href="#" class="btn btn-primary">Get a free consultation</a>
                             </div>
                         </div>
                     </div>
@@ -525,7 +533,7 @@
                         <div class="text-content">
                             <div class="page-title text-right">
                                 <div class="title-inner">
-                                    <h1>این دوره برای چه کسانی مناسب است؟</h1>
+                                    <h1>Who is this course suitable for?</h1>
                                 </div>
                             </div>
                             <div class="list-items">
@@ -535,10 +543,10 @@
                                             <img src="images/thumb-up.svg" alt="icon">
                                         </div>
                                         <div class="info">
-                                            <p>این دوره یا به عبارت بهتر جلسات انتقال تجربه برای هر مربی یا علاقمند به
-                                                حرفه مربیگری است که می‌خواهد راهی خوب و بدون
-                                                اشتباه برای یافتن مشتریانی پیدا کند که از پس هزینه خدمات کوچینگ برآیند.
-                                            </p>
+                                            <p>This course, or rather the experience transfer sessions, is for any coach
+                                                or interested in the coaching profession who
+                                                wants to find a good and foolproof way to find clients who can afford
+                                                coaching services.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -548,8 +556,8 @@
                                             <img src="images/thumb-up.svg" alt="icon">
                                         </div>
                                         <div class="info">
-                                            <p>این دوره برای مربیان، کارشناسان و مدرسانی است که می خواهند درآمد و
-                                                تاثیرگذاری خود را به سطح بعدی ببرند!</p>
+                                            <p>This course is for coaches, experts and lecturers who want to take their
+                                                income and influence to the next level!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -559,10 +567,10 @@
                                             <img src="images/thumb-up.svg" alt="icon">
                                         </div>
                                         <div class="info">
-                                            <p>اگر مایلید سوار بر موج رونق کوچینگ شوید و با دانش خود بر زندگی مردم تأثیر
-                                                بگذارید، این دوره برای شما مناسب است. شما می
-                                                توانید مربی شناخته شده، ثروتمند و پردرآمدی شوید که در زندگی قهرمانان نقش
-                                                زیادی داشته باشد.</p>
+                                            <p>If you want to ride the wave of the coaching boom and impact people's
+                                                lives with your knowledge, this course is for you.
+                                                You can become a well-known, rich and well-paid trainer who plays a big
+                                                role in the lives of the heroes.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -582,33 +590,31 @@
                     <div class="call-content">
                         <div class="page-title text-right">
                             <div class="title-inner">
-                                <h1>همین الان تماس بگیر</h1>
+                                <h1>Call now</h1>
                             </div>
                         </div>
                         <div class="form-content">
                             <div class="inputgroup">
-                                <label>نام و نام خانوادگی شما</label>
+                                <label>Your name and surname</label>
                                 <input type="text" class="input" placeholder="">
                             </div>
                             <div class="inputgroup">
-                                <label>شماره همراه</label>
+                                <label>Phone number</label>
                                 <input type="number" class="input" placeholder="">
                             </div>
                             <div class="inputgroup">
-                                <label>ایمیل</label>
+                                <label>Email</label>
                                 <input type="email" class="input" placeholder="">
                             </div>
                         </div>
                         <div class="btns-group">
-                            <button class="btn btn-secondary">ارسال اطلاعات</button>
-                            <button class="btn btn-primary">دریافت مشاوره رایگان</button>
+                            <button class="btn btn-secondary">Sending information</button>
+                            <button class="btn btn-primary">Get a free consultation</button>
                         </div>
                     </div>
                     <div class="img-content">
                         <div class="img-inner">
-                            <h6>همکاران ما آماده پاسخ به سوالات شما و ارائه مشاوره رایگان هستند</h6>
-                            <!-- <div class="text-info">
-                            </div> -->
+                            <h6>Our colleagues are ready to answer your questions and provide free advice</h6>
                         </div>
                     </div>
                 </div>
