@@ -1,0 +1,55 @@
+/*#region ----------------- Property */
+.property-section {
+  background-color: white;
+  padding-bottom: 50px;
+  .grid-layout {
+    @include displayFlex(flex, center, center);
+    position: relative;
+    top: -50px;
+    background-color: white;
+    box-shadow: $boxshadow;
+    border-radius: 30px;
+    width: 950px;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+  .card-coach-property {
+    flex: 1 0 33.33%;
+    width: 33.33%;
+    &:last-child {
+      border-left: none;
+    }
+  }
+}
+
+.card-coach-property {
+  border-left: 1px solid $borderColor;
+  padding: 10px 30px;
+  .card-inner {
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+  }
+  .thumb {
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    padding-right: 10px;
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $textDark;
+      margin-bottom: 5px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: $textGrey;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*#endregion -------------- Property */

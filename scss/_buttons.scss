@@ -64,4 +64,15 @@
     background-color: #364fd9;
   }
 }
+.btn-secondary-outline {
+  background: transparent;
+  color: $secondary;
+  border: 2px solid $secondary;
+  padding: 0.62rem 1.2rem;
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    color: white;
+  }
+}
 /*#endregion -------------- Buttons */
