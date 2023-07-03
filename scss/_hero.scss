@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  z-index: -1;
-
+  // z-index: -1;
   .section-inner {
-    //   padding-top: 100px;
+    position: relative;
+    z-index: 88;
   }
   .image-content {
     position: relative;
@@ -30,7 +30,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
+      bottom: 0;
       right: 50%;
       width: 230px;
       height: 100%;
@@ -79,7 +79,7 @@
     bottom: -200px;
     width: 600px;
     height: 600px;
-    z-index: -1;
+    z-index: 1;
     &::after {
       content: "";
       position: absolute;
@@ -90,7 +90,6 @@
       background-image: url(../images/hero-circle-1.png);
       background-repeat: no-repeat;
       background-size: 100%;
-      // transition: all 2s linear;
       animation: rotate 25s linear infinite;
     }
     &::before {
@@ -108,4 +107,63 @@
   }
 }
 
+@media (max-width: 1199px) {
+  .area-hero-index {
+    .text-content {
+      p {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .area-hero-index {
+    background-position: left center;
+    .section-inner {
+      padding-top: 50px;
+    }
+    .text-content {
+      margin-bottom: 20px;
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+    .image-content {
+      padding-top: 60px;
+      &::before {
+        width: 120px;
+        right: 0;
+        transform: unset;
+        border-radius: 0 20px 0 0;
+      }
+      &::after {
+        width: 2px;
+        right: 130px;
+        border: none;
+        border-left: 3px dotted $primary;
+      }
+      .img-inner {
+        width: 220px;
+        margin: 0 20px 0 auto;
+      }
+    }
+    .circle-image-rotate {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .area-hero-index {
+    .circle-image-rotate {
+      width: 400px;
+      height: 400px;
+      left: -150px;
+      bottom: -150px;
+    }
+  }
+}
 /*#endregion -------------- Hero */

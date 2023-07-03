@@ -239,7 +239,7 @@
     display: block;
   }
   .thumb {
-    @include imgContainer(320px, 25px);
+    @include imgContainer(320px, 20px);
     img {
       transition: all 0.4s ease-in-out;
     }
@@ -290,6 +290,86 @@
   }
 }
 
+.card-course {
+  // padding: 0 10px;
+  .card-inner {
+    background-color: white;
+    box-shadow: $boxshadow;
+    border-radius: 0 18px 18px 18px;
+    padding: 15px;
+    display: block;
+    position: relative;
+  }
+  .thumb {
+    img {
+      width: 100%;
+      border-radius: 0 15px 15px 15px;
+    }
+  }
+  .info {
+    margin-top: 15px;
+    h3 {
+      font-size: 15px;
+      color: $textDark;
+      @include textTruncate(1);
+    }
+    p {
+      @include textTruncate(2);
+      font-size: 13px;
+      line-height: 20px;
+      min-height: 40px;
+      color: $textGrey;
+    }
+  }
+  .btn-payment {
+    text-align: left;
+    .btn-primary {
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+      background-color: $secondary;
+      border-radius: 60px;
+      min-width: unset;
+    }
+  }
+  .course-status {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-color: rgba($color: white, $alpha: 0.2);
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    border-radius: 0 10px 10px 10px;
+  }
+  &:hover {
+    .card-inner {
+      background-color: $secondary;
+    }
+    .info {
+      h3 {
+        color: white;
+      }
+      p {
+        color: rgba($color: white, $alpha: 0.8);
+      }
+    }
+    .btn-payment {
+      .btn-primary {
+        background-color: $primary;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .card-education {
+    .thumb {
+      height: 290px;
+    }
+  }
+}
 @media (max-width: 1199px) {
   .card-property {
     .info {
@@ -336,6 +416,26 @@
       }
     }
   }
+  .card-course {
+    .card-inner {
+      padding: 10px;
+    }
+    .info {
+      h3 {
+        font-size: 13px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 18px;
+        min-height: 36px;
+      }
+    }
+    .btn-payment {
+      .btn-primary {
+        font-size: 12px;
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
   .card-property {
@@ -377,6 +477,11 @@
       h4 {
         font-size: 12px;
       }
+    }
+  }
+  .card-education {
+    .thumb {
+      height: 320px;
     }
   }
 }
