@@ -1,0 +1,224 @@
+/*#region ----------------- Blogs */
+.blogs-grid-section {
+  margin: 80px 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -90px;
+    right: 30px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/circle-dots.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/dots-square.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .section-inner {
+    margin-top: 30px;
+  }
+  .grid-layout {
+    display: grid;
+    grid-template-columns: 65% 35%;
+  }
+  .grid-news-preview,
+  .grid-news-row {
+    .grid-inner {
+      padding: 20px;
+      background-color: white;
+      border-radius: 20px;
+    }
+  }
+  .grid-news-preview {
+    padding-left: 30px;
+  }
+  .btns-group {
+    margin-top: 30px;
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.swiper-blog-preview {
+  .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+  .swiper-pagination-bullet {
+    &.swiper-pagination-bullet-active {
+      background-color: $secondary;
+    }
+  }
+}
+
+.card-blog-preview {
+  .card-inner {
+    display: block;
+    background-color: white;
+  }
+  .thumb {
+    @include imgContainer(362px, 15px);
+  }
+  .play-action {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(50%, -50%);
+    @include displayFlex(flex, center, center);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    .btn-play {
+      width: 70px;
+      height: 70px;
+      @include displayFlex(flex, center, center);
+      font-size: 30px;
+      color: white;
+      background-color: rgba($color: white, $alpha: 0.4);
+      border-radius: 20px;
+      border: none;
+    }
+    &:hover {
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      .btn-play {
+        color: $primary;
+      }
+    }
+  }
+  .info {
+    margin-top: 15px;
+    h2 {
+      font-size: 18px;
+      @include textTruncate(1);
+    }
+  }
+}
+
+.card-blog-row-small {
+  margin-bottom: 12px;
+  .card-inner {
+    background-color: $background;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 90px auto;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .thumb {
+    @include imgContainer(90px, 10px);
+  }
+  .info {
+    padding-right: 10px;
+    h4 {
+      font-size: 13px;
+      font-weight: 500;
+      color: $textDark;
+      margin-bottom: 6px;
+      @include textTruncate(1);
+    }
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      color: $textGrey;
+      margin-bottom: 5px;
+      @include textTruncate(1);
+    }
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: white;
+    font-size: 18px;
+    margin-right: auto;
+    @include displayFlex(flex, center, center);
+  }
+  &:hover {
+    .card-inner {
+      border-color: $primary;
+    }
+    .info {
+      h4 {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .blogs-grid-section {
+    .grid-news-preview,
+    .grid-news-row {
+      .grid-inner {
+        padding: 15px;
+      }
+    }
+    .grid-news-preview {
+      padding-left: 20px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .blogs-grid-section {
+    .grid-layout {
+      grid-template-columns: 100%;
+    }
+    .grid-news-preview {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card-blog-preview {
+    .thumb {
+      height: 300px;
+    }
+    .info {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .card-blog-preview {
+    .thumb {
+      height: 250px;
+    }
+    .play-action {
+      .btn-play {
+        width: 55px;
+        height: 55px;
+        border-radius: 15px;
+        font-size: 24px;
+      }
+    }
+    .info {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+/*#endregion -------------- Blogs */

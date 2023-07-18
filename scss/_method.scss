@@ -1,0 +1,26 @@
+/*#region ----------------- Method */
+.method-section {
+  margin: 10px 0 90px 0;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+    background-image: url(../images/dots-orib.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+  }
+  .section-inner {
+    margin-top: 3rem;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+}
+
+/*#endregion -------------- Method */

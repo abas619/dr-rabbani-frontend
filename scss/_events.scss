@@ -1,0 +1,121 @@
+/*#region ----------------- Events */
+.events-section {
+  background-color: white;
+  position: relative;
+  margin-top: 150px;
+  padding-bottom: 120px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/curve-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  .section-inner {
+    margin-top: 3.5rem;
+  }
+}
+
+.card-event {
+  margin-bottom: 20px;
+  .card-inner {
+    position: relative;
+    display: block;
+  }
+  .thumb {
+    @include imgContainer(280px, 15px);
+  }
+  .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    @include displayFlex(flex, flex-start, flex-end);
+    flex-direction: column;
+    padding: 20px 30px 20px 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.9)
+      );
+      border-radius: 15px;
+      opacity: 0.5;
+      transition: all 0.3s ease-in-out;
+    }
+    h3 {
+      font-size: 16px;
+      color: white;
+      margin-bottom: 0;
+      position: relative;
+      @include textTruncate(1);
+      .fi {
+        margin-left: 5px;
+        position: relative;
+        top: 5px;
+      }
+    }
+    .date {
+      position: relative;
+      margin-top: 10px;
+      font-size: 13px;
+      font-weight: 400;
+      color: rgba($color: white, $alpha: 0.8);
+      .fi {
+        margin-left: 6px;
+        font-size: 16px;
+        color: rgba($color: white, $alpha: 0.6);
+        position: relative;
+        top: 3px;
+      }
+    }
+  }
+  &:hover {
+    .info {
+      &::before {
+        opacity: 1;
+      }
+      h3 {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .card-event {
+    .thumb {
+      height: 230px;
+    }
+    .info {
+      padding: 15px 20px 10px 15px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .card-event {
+    .thumb {
+      height: 210px;
+    }
+    .info {
+      padding: 10px;
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/*#endregion -------------- Events */

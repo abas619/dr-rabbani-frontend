@@ -64,6 +64,18 @@
       }
     }
   }
+  &.bg-white {
+    background-color: white;
+    padding: 60px 0;
+    .section-inner {
+      background-color: $background;
+    }
+    .inputgroup {
+      .input {
+        background-color: white;
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {

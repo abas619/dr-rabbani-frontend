@@ -1,4 +1,4 @@
-/*#region ----------------- Course Details */
+/*#region ----------------- Cards */
 .card-property {
   padding: 0 6px 15px 6px;
   .card-inner {
@@ -291,7 +291,6 @@
 }
 
 .card-course {
-  // padding: 0 10px;
   .card-inner {
     background-color: white;
     box-shadow: $boxshadow;
@@ -363,6 +362,87 @@
   }
 }
 
+.card-method {
+  margin-bottom: 20px;
+  .card-inner {
+    background-color: white;
+    box-shadow: $boxshadow;
+    border-radius: 50px;
+    padding: 30px;
+  }
+  .thumb {
+    width: 90px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    margin-top: 1.2rem;
+    h5 {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 0;
+      color: $textDark;
+    }
+  }
+}
+
+.card-ostad-comment {
+  padding: 30px;
+  .card-inner {
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: $boxshadow;
+  }
+  .c-header {
+    display: grid;
+    grid-template-columns: 90px auto;
+    align-items: center;
+  }
+  .thumb {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    padding: 5px;
+    box-shadow: $boxshadow;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    right: -30px;
+    transform: scale(1.5);
+    background-color: white;
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  .info {
+    h4 {
+      font-size: 18px;
+      font-weight: 800;
+      color: $secondary;
+      margin-bottom: 6px;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      color: $primary;
+      margin-bottom: 0;
+    }
+  }
+  .desc {
+    margin-top: 15px;
+    p {
+      text-align: justify;
+      color: $textGrey;
+      margin-bottom: 0;
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .card-education {
     .thumb {
@@ -377,6 +457,48 @@
         font-size: 13px;
       }
       h6 {
+        font-size: 14px;
+      }
+    }
+  }
+  .card-ostad-comment {
+    .card-inner {
+      padding: 20px;
+    }
+    .c-header {
+      grid-template-columns: 75px auto;
+    }
+    .thumb {
+      width: 70px;
+      height: 70px;
+    }
+    .info {
+      h4 {
+        font-size: 16px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+    }
+    .desc {
+      margin-top: 5px;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .card-method {
+    .card-inner {
+      padding: 20px;
+      border-radius: 40px;
+    }
+    .thumb {
+      width: 70px;
+    }
+    .info {
+      h5 {
         font-size: 14px;
       }
     }
@@ -436,6 +558,41 @@
       }
     }
   }
+  .card-method {
+    .card-inner {
+      padding: 15px;
+      border-radius: 30px;
+    }
+    .thumb {
+      width: 60px;
+    }
+  }
+  .card-ostad-comment {
+    .card-inner {
+      padding: 15px;
+    }
+    .c-header {
+      grid-template-columns: 65px auto;
+    }
+    .thumb {
+      width: 60px;
+      height: 60px;
+      padding: 2px;
+    }
+    .info {
+      h4 {
+        font-size: 14px;
+      }
+      h5 {
+        font-size: 13px;
+      }
+    }
+    .desc {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
   .card-property {
@@ -485,4 +642,4 @@
     }
   }
 }
-/*#endregion -------------- Course Details */
+/*#endregion -------------- Cards */

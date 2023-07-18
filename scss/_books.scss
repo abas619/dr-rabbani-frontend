@@ -1,0 +1,140 @@
+/*#region ----------------- Books */
+.books-section {
+  margin: 80px 0;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 50px;
+    height: 241px;
+    background-image: url(../images/geometrics-shapes-2.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 60px;
+    width: 120px;
+    height: 120px;
+    background-image: url(../images/circle-dots.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+  }
+  .section-inner {
+    margin-top: 3rem;
+    @include displayFlex(flex, flex-start, center);
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+  }
+  .card-book {
+    flex: 0 0 20%;
+    width: 20%;
+  }
+}
+
+.card-book {
+  padding: 12px;
+  margin-bottom: 10px;
+  .card-inner {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 70%;
+      border-radius: 20px 100px 20px 20px;
+      box-shadow: $boxshadow;
+      background-color: white;
+      z-index: -1;
+    }
+  }
+  .thumb {
+    width: 110px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  .info {
+    padding: 10px 10px 25px 10px;
+    margin-top: 20px;
+    h4 {
+      font-size: 14px;
+      text-align: center;
+      color: $textDark;
+      margin-bottom: 0;
+      min-height: 40px;
+      @include textTruncate(2);
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .card-book {
+    .thumb {
+      width: 90px;
+    }
+    .info {
+      margin-top: 15px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .books-section {
+    &::before {
+      width: 30px;
+      height: 147px;
+    }
+    .card-book {
+      flex: 0 0 33.33%;
+      width: 33.33%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .books-section {
+    .card-book {
+      flex: 0 0 50%;
+      width: 50%;
+    }
+  }
+  .card-book {
+    padding: 10px;
+    .info {
+      margin-top: 10px;
+      h4 {
+        font-size: 13px;
+        min-height: 36px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .card-book {
+    padding: 8px;
+    .thumb {
+      width: 80px;
+    }
+    .info {
+      padding: 8px 8px 15px 8px;
+      margin-top: 10px;
+      h4 {
+        font-size: 13px;
+        min-height: 36px;
+      }
+    }
+  }
+}
+/*#endregion -------------- Books */

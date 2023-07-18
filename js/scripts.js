@@ -1,3 +1,5 @@
+AOS.init();
+
 var body = document.querySelector('body');
 
 if (document.querySelector('.btn-mobile-menu') != null) {

@@ -65,6 +65,9 @@ body.en {
         right: 5px;
       }
     }
+    .btn-show-search {
+      padding: 10px;
+    }
   }
   #sidebar-menu {
     right: unset;
@@ -196,8 +199,128 @@ body.en {
   .contact-section .call-content {
     padding: 0 30px 0 0;
   }
+  .page-title {
+    .icon {
+      margin: 0 10px 0 0;
+    }
+  }
+  .area-hero-index {
+    .image-content .img-inner {
+      transform: scaleX(-1);
+    }
+    .text-content {
+      p {
+        margin-left: unset;
+        margin-right: auto;
+      }
+      .btns-group {
+        .btn {
+          margin: 5px 10px 5px 0;
+        }
+      }
+    }
+    .circle-image-rotate {
+      left: unset;
+      right: -200px;
+    }
+  }
+  .card-coach-property {
+    .info {
+      padding: 0 0 0 10px;
+    }
+  }
+  .profession-section .list li {
+    padding-left: 0;
+    padding-right: 20px;
+    &::before {
+      right: unset;
+      left: 7px;
+    }
+  }
+  .educational-suggestions-section {
+    .grid-title h2 {
+      right: unset;
+      left: 30px;
+      text-transform: capitalize;
+    }
+    .grid-slide {
+      border-radius: 35px 0 35px 35px;
+    }
+  }
+  .swiper-educational {
+    .swiper-button-next {
+      left: unset;
+      right: -15px;
+    }
+    .swiper-button-prev {
+      left: -15px;
+      right: unset;
+    }
+  }
+  .swiper-courses {
+    .swiper-button-next {
+      left: unset;
+      right: -15px;
+    }
+    .swiper-button-prev {
+      left: -15px;
+      right: unset;
+    }
+  }
+  .card-ostad-comment {
+    .thumb {
+      right: unset;
+      left: -30px;
+    }
+  }
+  .blogs-grid-section {
+    .grid-news-preview {
+      padding: 0 30px 0 0;
+    }
+  }
+  .card-blog-row-small {
+    .info {
+      padding: 0 0 0 10px;
+    }
+    .icon {
+      margin: 0 0 0 auto;
+    }
+  }
+  .card-event {
+    .info {
+      h3 .fi {
+        top: 3px;
+        margin: 0 5px 0 0;
+      }
+      .date .fi {
+        margin: 0 6px 0 0;
+      }
+    }
+  }
+  .footer {
+    &::after {
+      right: unset;
+      left: 0;
+    }
+    .desc {
+      padding-left: 0;
+      padding-right: 40px;
+    }
+    .certificate ul li {
+      margin: 5px 10px 5px 0;
+    }
+  }
 }
 
+@media (max-width: 1400px) {
+  body.en {
+    .comments-section {
+      &::after {
+        bottom: 180px;
+      }
+    }
+  }
+}
 @media (max-width: 1199px) {
   body.en {
     .suitable-section {
@@ -228,6 +351,27 @@ body.en {
     }
     .contact-section .call-content {
       padding: 0 0 20px 0;
+    }
+    .area-hero-index {
+      .image-content {
+        &::before {
+          right: unset;
+          left: 0;
+          border-radius: 20px 0 0 0;
+        }
+        &::after {
+          right: unset;
+          left: 130px;
+        }
+        .img-inner {
+          margin: 0 auto 0 20px;
+        }
+      }
+    }
+    .blogs-grid-section {
+      .grid-news-preview {
+        padding-right: 0;
+      }
     }
   }
 }
@@ -277,6 +421,14 @@ body.en {
         }
       }
     }
+    .footer {
+      &::after {
+        right: 0;
+        left: unset;
+        top: 40px;
+        background-position: left center;
+      }
+    }
   }
 }
 
@@ -299,6 +451,22 @@ body.en {
           left: -22px;
           bottom: -32px;
         }
+      }
+    }
+    .swiper-educational {
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+    }
+    .swiper-courses {
+      .swiper-button-next {
+        right: 0;
+      }
+      .swiper-button-prev {
+        left: 0;
       }
     }
   }

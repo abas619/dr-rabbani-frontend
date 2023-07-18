@@ -1,0 +1,117 @@
+/*#region ----------------- Calendar */
+.calendar-section {
+  position: relative;
+  top: -80px;
+  .section-inner {
+    width: 700px;
+    margin: 0 auto;
+    padding: 30px 50px 40px 50px;
+    background-color: white;
+    box-shadow: $boxshadow;
+    border-radius: 0 50px;
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 100px;
+      transform: rotate(180deg);
+      background-image: url(../images/geometrics-shapes-1.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 58px;
+      height: 40px;
+      transform: rotate(180deg);
+      background-image: url(../images/dots-top-left.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      opacity: 0.1;
+    }
+  }
+  .page-title {
+    h1 {
+      color: $accent;
+    }
+  }
+  .desc {
+    text-align: center;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $textGrey;
+      span {
+        color: $accent;
+      }
+    }
+  }
+  .email-input-group {
+    position: relative;
+    .input {
+      width: 100%;
+      height: 54px;
+      border-radius: 80px;
+      border: 1px solid $borderColor;
+      background-color: $background;
+      color: $textDark;
+      font-size: 16px;
+      padding: 5px 20px;
+      &:hover,
+      &:focus {
+        border-color: $secondary;
+      }
+    }
+    .btn-secondary {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 54px;
+      border-radius: 80px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .calendar-section {
+    .section-inner {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .calendar-section {
+    .desc p {
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .calendar-section {
+    .section-inner {
+      padding: 20px 35px 30px 35px;
+      &::after {
+        width: 35px;
+        height: 69px;
+      }
+      &::before {
+        width: 38px;
+        height: 30px;
+        right: 5px;
+        bottom: 5px;
+      }
+    }
+    .desc p {
+      font-size: 14px;
+    }
+  }
+}
+
+/*#endregion -------------- Calendar */

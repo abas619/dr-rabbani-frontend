@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#ffb200" />
     <meta name="msapplication-navbutton-color" content="#ffb200">
     <meta name="apple-mobile-web-app-status-bar-style" content="#ffb200">
-    <title>Dr. Rabani | خانه</title>
+    <title>Dr. Rabani | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -18,6 +18,10 @@
     <link href="css/all.rounded.css" rel="stylesheet" type="text/css" />
     <link href="plugins/aos/aos.css" rel="stylesheet" type="text/css" />
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="icon" href="images/small-icon.png" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
@@ -26,7 +30,7 @@
 
 </head>
 
-<body>
+<body class="en">
 
     <!-- Header -->
     <header class="myNavbar">
@@ -52,8 +56,7 @@
                                 <button type="button" class="btn btn-secondary icon-right" data-toggle="modal"
                                     data-target="#modal-sign">
                                     <i class="fi fi-rr-sign-out"></i>
-                                    <span>ورود / ثبت نام</span>
-                                </button>
+                                    <span>Login / Signup
                             </div>
                             <!-- برای وقتی که ثبت نام/ ورود کرد -->
                             <!-- <div class="login">
@@ -61,16 +64,16 @@
                                 </div> -->
                         </div>
                         <ul class="category-list">
-                            <li class="item"><a href="#">صفحه اصلی</a></li>
-                            <li class="item"><a href="#">بلاگ</a></li>
-                            <li class="item"><a href="#">درباره مدرس</a></li>
-                            <li class="item"><a href="#">تماس با ما</a></li>
+                            <li class="item"><a href="#">Home</a></li>
+                            <li class="item"><a href="#">Blog</a></li>
+                            <li class="item"><a href="#">About Teacher</a></li>
+                            <li class="item"><a href="#">Contact us</a></li>
                         </ul>
                         <div class="collapse-item">
                             <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapse-category-01" aria-expanded="false"
                                 aria-controls="collapse-category-01">
-                                <span class="name">دوره‌ها</span>
+                                <span class="name">Courses</span>
                                 <span class="icon"></span>
                             </button>
                             <div class="collapse" id="collapse-category-01">
@@ -78,18 +81,18 @@
                                     <ul>
                                         <li>
                                             <a href="#">
-                                                <span class="name">مشاهده همه</span>
+                                                <span class="name">See All</span>
                                                 <span class="desc"><i class="fi fi-rr-angle-small-left"></i></span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="name">دوره 1</span>
+                                                <span class="name">Course 1</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span class="name">دوره 2</span>
+                                                <span class="name">Course 2</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -106,20 +109,20 @@
                 </div>
                 <div class="links">
                     <ul class="link-list">
-                        <li class="item"><a href="index.html">صفحه اصلی</a>
+                        <li class="item"><a href="index.html">Home</a>
                         </li>
                         <li class="item">
-                            <a href="#">دوره‌ها<i class="fi fi-rr-angle-small-down"></i></a>
+                            <a href="#">Courses<i class="fi fi-rr-angle-small-down"></i></a>
                             <ul class="sub-list">
-                                <li class="sub-item"><a href="#">تخصص ۱</a></li>
-                                <li class="sub-item"><a href="#">تخصص ۲</a></li>
-                                <li class="sub-item"><a href="#">تخصص ۳</a></li>
+                                <li class="sub-item"><a href="#">Course Name 1</a></li>
+                                <li class="sub-item"><a href="#">Course Name 2</a></li>
+                                <li class="sub-item"><a href="#">Course Name 3</a></li>
                             </ul>
                         </li>
-                        <li class="item"><a href="blog-list.html">بلاگ</a>
+                        <li class="item"><a href="blog-list.html">Blog</a>
                         </li>
-                        <li class="item"><a href="about.html">درباره مدرس</a></li>
-                        <li class="item"><a href="contact-us.html">تماس با ما</a></li>
+                        <li class="item"><a href="about.html">About Teacher</a></li>
+                        <li class="item"><a href="contact-us.html">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="nav-action">
@@ -128,42 +131,43 @@
                                 class="fi fi-rr-search"></i></button>
                         <div class="search-content">
                             <div class="search-inputgroup">
-                                <input type="text" class="input" id="search-input" placeholder="جستجو...">
+                                <input type="text" class="input" id="search-input" placeholder="Search...">
                                 <button type="button" class="btn-search-close"><i class="fi fi-rr-cross"></i></button>
                                 <button type="submit" class="btn-search-sumbit"><i class="fi fi-rr-search"></i></button>
                             </div>
                             <div class="result" id="search-result">
                                 <ul>
-                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-apps"></i>عنوان جستجو</a></li>
-                                    <li><a href="#"><i class="fi fi-rr-search"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>Search subject 1</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>Search subject 2</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-apps"></i>Search subject 3</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-search"></i>Search subject 4</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="user-login">
+
                         <!-- Sign -->
-                        <div class="sign">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sign">
-                                <span>ورود</span>
-                                <span>ثبت نام</span>
-                            </button>
-                        </div>
+                        <!-- <div class="sign">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sign">
+                                    <span>Login</span>
+                                    <span>Signup</span>
+                                </button>
+                            </div> -->
+
                         <!-- Login -->
-                        <!-- <div class="login">
+                        <div class="login">
                             <div class="user-link">
                                 <div class="icon"><i class="fi fi-rr-user"></i></div>
                             </div>
                             <ul class="user-menu">
-                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>پروفایل
-                                        من</a></li>
-                                <li><a href="#"><i class="fi fi-rr-computer"></i>دوره‌های من</a>
+                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>My Profile</a></li>
+                                <li><a href="#"><i class="fi fi-rr-computer"></i>My Courses</a>
                                 </li>
-                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>پرداخت ها</a></li>
-                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>خروج</a></li>
+                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>Transactions</a></li>
+                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>Logout</a></li>
                             </ul>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,13 +187,13 @@
                     </div>
                     <div class="col-lg-7 order-lg-2 order-md-1 order-1">
                         <div class="text-content">
-                            <h1>دکتر محمد مهدی ربانی</h1>
-                            <h2>بیزینس کوچ کسب و کار</h2>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که نیست ولی هست</p>
+                            <h1>Dr. Mohammad Mahdi Rabani</h1>
+                            <h2>Business coach business</h2>
+                            <p>moment discovery frog degree afternoon finish shape perhaps tone parts represent metal
+                                opinion interest arrange hung myself take throw type farm park lesson storm</p>
                             <div class="btns-group">
-                                <a href="#" class="btn btn-secondary">مشاهده دوره ها</a>
-                                <a href="#" class="btn btn-secondary-outline">بیشتر بدانید</a>
+                                <a href="#" class="btn btn-secondary">View courses</a>
+                                <a href="#" class="btn btn-secondary-outline">See More</a>
                             </div>
                         </div>
                     </div>
@@ -210,8 +214,8 @@
                                 <img src="images/property-1.svg" alt="img">
                             </div>
                             <div class="info">
-                                <h3>کوچ حرفه ایی</h3>
-                                <p>به یک کوچ حرفه‌ایی تبدیل شو</p>
+                                <h3>Professional coach</h3>
+                                <p>Become a professional coach</p>
                             </div>
                         </div>
                     </div>
@@ -221,8 +225,8 @@
                                 <img src="images/property-2.svg" alt="img">
                             </div>
                             <div class="info">
-                                <h3>درآمد بیشتر</h3>
-                                <p>درآمد خود را چند برابر کنید</p>
+                                <h3>More Income</h3>
+                                <p>Multiply your income</p>
                             </div>
                         </div>
                     </div>
@@ -232,8 +236,8 @@
                                 <img src="images/property-3.svg" alt="img">
                             </div>
                             <div class="info">
-                                <h3>رونق کسب و کار</h3>
-                                <p>کسب و کار خود را رونق دهید</p>
+                                <h3>Business boom</h3>
+                                <p>Grow your business</p>
                             </div>
                         </div>
                     </div>
@@ -247,54 +251,55 @@
         <div class="container">
             <div class="page-title text-right">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-document"></i></span>پیشینه حرفه‌ای</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-document"></i></span>Professional records</h1>
                 </div>
             </div>
             <div class="section-inner">
                 <ul class="list">
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        مربی و مشاوره کسب و کار
+                        Coach and business consultant
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        b. دارای PHD مدیریت
+                        Has a PHD in management
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        موسس پلتفرم آموزشی ویدان
+                        Founder of Vidan educational platform
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        مدیرمسئول مجله خلاقیت
+                        Manager in charge of creativity magazine
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        مدیرمسئول انتشارات نگاه نوین
+                        Manager in charge of Negah Novin Publications
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        استاد ارشد EABW دانشگاه اشتاین بایس برلین
+                        Senior Professor of EABW, Steinbeis University, Berlin
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        دارای گواهینامه تدریس از wifi اتریش ، معتبرترین نهاد آموزشی بازرگانان اتریش
+                        Has a teaching certificate from Wi-Fi Austria, the most prestigious training institution for
+                        businessmen in Austria
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        همكار علمی پرفسور لوهمولر در دانشگاه كرنفیلد انگلستان
+                        Scientific associate of Professor Luke Muller at Cranfield University, England
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        استاد آكادمی صادرات آلمان
+                        Professor of the German Export Academy
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        موسس چندین استارتاپ موفق در ایران، سوییس و امارات
+                        The founder of several successful startups in Iran, Switzerland and the UAE
                     </li>
                     <li data-aos="fade-up">
                         <span class="icon"></span>
-                        کارشناس صدا و سیمای جمهوری اسلامی ایران
+                        Radio expert of the Islamic Republic of Iran
                     </li>
                 </ul>
             </div>
@@ -307,7 +312,7 @@
         <div class="container">
             <div class="section-inner">
                 <div class="grid-title" data-aos="fade-left">
-                    <h2>پیشنهادات آموزشی</h2>
+                    <h2>Educational suggestions</h2>
                 </div>
                 <div class="grid-slide">
                     <div class="swiper swiper-educational">
@@ -320,8 +325,8 @@
                                                 <img src="https://picsum.photos/id/48/472/640" alt="img-name" />
                                             </div>
                                             <div class="text-content">
-                                                <h3>تربیت کوچ</h3>
-                                                <p>مشاهده دوره<i class="fi fi-rr-angle-small-left"></i></p>
+                                                <h3>Subject</h3>
+                                                <p>View course<i class="fi fi-rr-angle-small-right"></i></p>
                                             </div>
                                         </div>
                                     </a>
@@ -335,8 +340,8 @@
                                                 <img src="https://picsum.photos/id/82/472/640" alt="img-name" />
                                             </div>
                                             <div class="text-content">
-                                                <h3>تربیت کوچ</h3>
-                                                <p>مشاهده دوره<i class="fi fi-rr-angle-small-left"></i></p>
+                                                <h3>Subject</h3>
+                                                <p>View course<i class="fi fi-rr-angle-small-right"></i></p>
                                             </div>
                                         </div>
                                     </a>
@@ -350,8 +355,8 @@
                                                 <img src="https://picsum.photos/id/113/472/640" alt="img-name" />
                                             </div>
                                             <div class="text-content">
-                                                <h3>تربیت کوچ</h3>
-                                                <p>مشاهده دوره<i class="fi fi-rr-angle-small-left"></i></p>
+                                                <h3>Subject</h3>
+                                                <p>View course<i class="fi fi-rr-angle-small-right"></i></p>
                                             </div>
                                         </div>
                                     </a>
@@ -365,8 +370,8 @@
                                                 <img src="https://picsum.photos/id/155/472/640" alt="img-name" />
                                             </div>
                                             <div class="text-content">
-                                                <h3>تربیت کوچ</h3>
-                                                <p>مشاهده دوره<i class="fi fi-rr-angle-small-left"></i></p>
+                                                <h3>Subject</h3>
+                                                <p>View course<i class="fi fi-rr-angle-small-right"></i></p>
                                             </div>
                                         </div>
                                     </a>
@@ -380,8 +385,8 @@
                                                 <img src="https://picsum.photos/id/175/472/640" alt="img-name" />
                                             </div>
                                             <div class="text-content">
-                                                <h3>تربیت کوچ</h3>
-                                                <p>مشاهده دوره<i class="fi fi-rr-angle-small-left"></i></p>
+                                                <h3>Subject</h3>
+                                                <p>View course<i class="fi fi-rr-angle-small-right"></i></p>
                                             </div>
                                         </div>
                                     </a>
@@ -401,7 +406,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-play"></i></span>دوره های رایگان</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-play"></i></span>Free courses</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -414,14 +419,16 @@
                                         <img src="https://via.placeholder.com/400x290/ccc.png" alt="img-name">
                                     </div>
                                     <div class="info">
-                                        <h3>شهرت یا حسن شهرت</h3>
-                                        <p>در این دوره شما عزیزان یاد می گیرید چگونه مهارت های فردی خود را افزایش داد و
-                                            باتوجه به نیاز روز</p>
+                                        <h3>toy life chart bridge door popular complex ask answer pool aid design
+                                            announced die parallel knowledge stranger detail merely sense steel factor
+                                            mental upon</h3>
+                                        <p>disappear cool myself solve hit swam avoid cost silver yard mud stand unknown
+                                            maybe everything my piece snake fact secret picture gradually buy not</p>
+                                        <div class="btn-payment">
+                                            <button class="btn btn-primary">Buy</button>
+                                        </div>
+                                        <div class="course-status">رایگان</div>
                                     </div>
-                                    <div class="btn-payment">
-                                        <button class="btn btn-primary">خرید دوره</button>
-                                    </div>
-                                    <div class="course-status">رایگان</div>
                                 </a>
                             </div>
                         </div>
@@ -432,14 +439,17 @@
                                         <img src="https://via.placeholder.com/400x290/ccc.png" alt="img-name">
                                     </div>
                                     <div class="info">
-                                        <h3>شهرت یا حسن شهرت</h3>
-                                        <p>در این دوره شما عزیزان یاد می گیرید چگونه مهارت های فردی خود را افزایش داد و
-                                            باتوجه به نیاز روز</p>
+                                        <h3>power interior fierce finally stood properly year both loss angle term desk
+                                            college hang book advice design pull carry screen try someone silence engine
+                                        </h3>
+                                        <p>equally congress seen women against best kept mostly beside seems graph
+                                            worried measure press call sum rough movement soon poem parallel gasoline
+                                            orange previous</p>
                                     </div>
                                     <div class="btn-payment">
-                                        <button class="btn btn-primary">خرید دوره</button>
+                                        <button class="btn btn-primary">Buy</button>
                                     </div>
-                                    <div class="course-status">100% پولی</div>
+                                    <div class="course-status">100% Off</div>
                                 </a>
                             </div>
                         </div>
@@ -450,14 +460,17 @@
                                         <img src="https://via.placeholder.com/400x290/ccc.png" alt="img-name">
                                     </div>
                                     <div class="info">
-                                        <h3>7 روند عمده بازاریابی دیجیتال</h3>
-                                        <p>در این دوره شما عزیزان یاد می گیرید چگونه مهارت های فردی خود را افزایش داد و
-                                            باتوجه به نیاز روز</p>
+                                        <h3>basic freedom shirt prevent hold studying policeman plus beauty fallen stiff
+                                            valuable hurt afternoon above detail born original wild television breeze
+                                            difference window hung</h3>
+                                        <p>ranch girl together fifty purpose nature none union sudden special orange
+                                            height printed examine useful grandfather too type outline each thus you
+                                            scientific must</p>
                                     </div>
                                     <div class="btn-payment">
-                                        <button class="btn btn-primary">خرید دوره</button>
+                                        <button class="btn btn-primary">Buy</button>
                                     </div>
-                                    <div class="course-status">50% پولی</div>
+                                    <div class="course-status">50% Off</div>
                                 </a>
                             </div>
                         </div>
@@ -468,14 +481,16 @@
                                         <img src="https://via.placeholder.com/400x290/ccc.png" alt="img-name">
                                     </div>
                                     <div class="info">
-                                        <h3>خلق ایده های ناب و پولساز</h3>
-                                        <p>در این دوره شما عزیزان یاد می گیرید چگونه مهارت های فردی خود را افزایش داد و
-                                            باتوجه به نیاز روز</p>
+                                        <h3>journey thick leader sure donkey phrase eye work worry brush known of cattle
+                                            mother tin waste child flag would able rhythm on route doll</h3>
+                                        <p>continent pound slow oxygen than hour build visitor willing have influence
+                                            rhyme solid freedom century bee pan sheep bag brief sum say waste writing
+                                        </p>
                                     </div>
                                     <div class="btn-payment">
-                                        <button class="btn btn-primary">خرید دوره</button>
+                                        <button class="btn btn-primary">Buy</button>
                                     </div>
-                                    <div class="course-status">آنلاین</div>
+                                    <div class="course-status">Offline</div>
                                 </a>
                             </div>
                         </div>
@@ -486,14 +501,17 @@
                                         <img src="https://via.placeholder.com/400x290/ccc.png" alt="img-name">
                                     </div>
                                     <div class="info">
-                                        <h3>خلق ایده های ناب و پولساز</h3>
-                                        <p>در این دوره شما عزیزان یاد می گیرید چگونه مهارت های فردی خود را افزایش داد و
-                                            باتوجه به نیاز روز</p>
+                                        <h3>lungs eight go even symbol biggest night gasoline upon ourselves master
+                                            underline elephant loss variety present pitch officer fully belt satisfied
+                                            climate bet structure</h3>
+                                        <p>cage wish label written provide inch rocket represent exchange week increase
+                                            darkness surrounded rule closely dead fallen forth poor dollar strange
+                                            military anywhere thank</p>
                                     </div>
                                     <div class="btn-payment">
-                                        <button class="btn btn-primary">خرید دوره</button>
+                                        <button class="btn btn-primary">Buy</button>
                                     </div>
-                                    <div class="course-status">آنلاین</div>
+                                    <div class="course-status">Online</div>
                                 </a>
                             </div>
                         </div>
@@ -511,15 +529,15 @@
             <div class="section-inner" data-aos="zoom-in">
                 <div class="page-title">
                     <div class="title-inner">
-                        <h1>تقویم آموزشی سالانه</h1>
+                        <h1>Annual educational calendar</h1>
                     </div>
                 </div>
                 <div class="desc">
-                    <p>برای دریافت تقویم آموزشی سالانه <span>دکتر ربانی</span> ایمیل خود را وارد نمایید</p>
+                    <p>Enter your email to receive <span>Dr. Rabbani's</span> annual educational calendar/p>
                 </div>
                 <div class="email-input-group">
                     <input type="email" class="input" placeholder="ایمیل شما" />
-                    <button type="submit" class="btn btn-secondary">ثبت ایمیل</button>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
                 </div>
             </div>
         </div>
@@ -530,7 +548,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-play"></i></span>رویکرد و روش آموزشی</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-play"></i></span>Approach & Method</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -542,7 +560,7 @@
                                     <img src="images/icons/method-1.svg" alt="img">
                                 </div>
                                 <div class="info">
-                                    <h5>دوره های آنلاین</h5>
+                                    <h5>Online courses</h5>
                                 </div>
                             </div>
                         </div>
@@ -554,7 +572,7 @@
                                     <img src="images/icons/method-2.svg" alt="img">
                                 </div>
                                 <div class="info">
-                                    <h5>کوچ شخصی</h5>
+                                    <h5>Personal coach</h5>
                                 </div>
                             </div>
                         </div>
@@ -566,7 +584,7 @@
                                     <img src="images/icons/method-3.svg" alt="img">
                                 </div>
                                 <div class="info">
-                                    <h5>دوره های حضوری</h5>
+                                    <h5>Face-to-face courses</h5>
                                 </div>
                             </div>
                         </div>
@@ -578,7 +596,7 @@
                                     <img src="images/icons/method-4.svg" alt="img">
                                 </div>
                                 <div class="info">
-                                    <h5>کوچ کسب و کار</h5>
+                                    <h5>Business coach</h5>
                                 </div>
                             </div>
                         </div>
@@ -593,7 +611,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-handshake"></i></span>شرکت‌ها و برند‌های همکار</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-handshake"></i></span>Partner companies & brands</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -650,7 +668,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-comment"></i></span>نظرات و توصیه‌ها</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-comment"></i></span>Comments & recommendations</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -664,14 +682,14 @@
                                             <img src="https://via.placeholder.com/200x200/ccc.png" alt="img-name">
                                         </div>
                                         <div class="info">
-                                            <h4>دکتر ریچارد مایر</h4>
-                                            <h5>استاد کالج بازاریابی اکسفورد انگلستان</h5>
+                                            <h4>Dr. Richard Meyer</h4>
+                                            <h5>Professor of Oxford College of Marketing, England</h5>
                                         </div>
                                     </div>
                                     <div class="desc">
-                                        <p>محمدمهدی ربانی یکی از بهترین دانشجویان من در است که دانش عمیقی در بازاریابی
-                                            دارد. تحقیقات و سخنرانی‌های او در طول دوره
-                                            مرا خشنود ساخته است.</p>
+                                        <p>Mohammad Mahdi Rabbani is one of my best students who has deep knowledge in
+                                            marketing. His research and lectures
+                                            throughout the course have pleased me.</p>
                                     </div>
                                 </div>
                             </div>
@@ -684,14 +702,14 @@
                                             <img src="https://via.placeholder.com/200x200/ccc.png" alt="img-name">
                                         </div>
                                         <div class="info">
-                                            <h4>پروفسور ریچارد مک دونالد</h4>
-                                            <h5>استاد دانشگاه کرنفیلد انگلستان</h5>
+                                            <h4>Professor Richard McDonald</h4>
+                                            <h5>Professor at Cranfield University, England</h5>
                                         </div>
                                     </div>
                                     <div class="desc">
-                                        <p>من زمان زیادی را با محمدمهدی ربانی به بحث در مورد تحولات اخیر حوزه بازاریابی
-                                            گذراندم و به شدت تحت تاثیر دانش او در این
-                                            حوزه قرار گرفتم من او را به شما توصیه میکنم.</p>
+                                        <p>I spent a lot of time with Mohammad Mehdi Rabbani discussing the latest
+                                            developments in the marketing field and I was
+                                            very impressed with his knowledge in this field. I recommend him to you.</p>
                                     </div>
                                 </div>
                             </div>
@@ -704,14 +722,14 @@
                                             <img src="https://via.placeholder.com/200x200/ccc.png" alt="img-name">
                                         </div>
                                         <div class="info">
-                                            <h4>دکتر ریچارد مایر</h4>
-                                            <h5>استاد کالج بازاریابی اکسفورد انگلستان</h5>
+                                            <h4>Dr. Richard Meyer</h4>
+                                            <h5>Professor of Oxford College of Marketing, England</h5>
                                         </div>
                                     </div>
                                     <div class="desc">
-                                        <p>محمدمهدی ربانی یکی از بهترین دانشجویان من در است که دانش عمیقی در بازاریابی
-                                            دارد. تحقیقات و سخنرانی‌های او در طول دوره
-                                            مرا خشنود ساخته است.</p>
+                                        <p>Mohammad Mahdi Rabbani is one of my best students who has deep knowledge in
+                                            marketing. His research and lectures
+                                            throughout the course have pleased me.</p>
                                     </div>
                                 </div>
                             </div>
@@ -744,7 +762,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="info">
-                                                    <h2>عنوان خبری</h2>
+                                                    <h2>thin evidence usually lost shall burn magic chemical canal
+                                                        quickly memory receive sink worry ring fallen hall contrast
+                                                        combine visit wore even plate oil</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -761,7 +781,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="info">
-                                                    <h2>عنوان خبری</h2>
+                                                    <h2>bread fast common community memory arrangement board imagine
+                                                        company pen balloon indeed provide brick wear list eye gentle
+                                                        hurry location belt story diameter political</h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -781,9 +803,12 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>اصول و قواعد ICC پيرامون تمديد اشتراك خودكار</h4>
-                                        <p>اصول و قواعد اتاق بازرگانی بین المللی در راستای کمک به تفسیر</p>
-                                        <div class="icon"><i class="fi fi-rr-arrow-small-left"></i></div>
+                                        <h4>danger progress perhaps then camp told hall turn spell chicken printed thumb
+                                            date ice second ate space worth fill suddenly climb unknown lunch live</h4>
+                                        <p>separate swimming worse face shut problem entire run sheet or typical rays
+                                            train say lady original use teach bet adjective so comfortable biggest
+                                            hundred</p>
+                                        <div class="icon"><i class="fi fi-rr-arrow-small-right"></i></div>
                                     </div>
                                 </a>
                             </div>
@@ -795,9 +820,12 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>اصول و قواعد ICC پيرامون تمديد اشتراك خودكار</h4>
-                                        <p>اصول و قواعد اتاق بازرگانی بین المللی در راستای کمک به تفسیر</p>
-                                        <div class="icon"><i class="fi fi-rr-arrow-small-left"></i></div>
+                                        <h4>want alike human baseball explain people current her coffee charge likely
+                                            ought bend vote double stranger lying thick earn army very poetry captain
+                                            rhythm</h4>
+                                        <p>large share three clay trade afternoon name neck rubber rise pain still thing
+                                            led listen citizen other then donkey depend dangerous win repeat heat</p>
+                                        <div class="icon"><i class="fi fi-rr-arrow-small-right"></i></div>
                                     </div>
                                 </a>
                             </div>
@@ -809,14 +837,18 @@
                                         </div>
                                     </div>
                                     <div class="info">
-                                        <h4>اصول و قواعد ICC پيرامون تمديد اشتراك خودكار</h4>
-                                        <p>اصول و قواعد اتاق بازرگانی بین المللی در راستای کمک به تفسیر</p>
-                                        <div class="icon"><i class="fi fi-rr-arrow-small-left"></i></div>
+                                        <h4>herself safe least larger brass grain angry practical shake view population
+                                            shall building missing guess leg race lost willing engine egg surprise
+                                            yellow common</h4>
+                                        <p>divide correct look morning development needle we few shown but law damage
+                                            some ball dance come common foot studied certainly very agree grandfather
+                                            service</p>
+                                        <div class="icon"><i class="fi fi-rr-arrow-small-right"></i></div>
                                     </div>
                                 </a>
                             </div>
                             <div class="btns-group">
-                                <a href="blogs-list.html" class="btn btn-secondary">مشاهده بیشتر</a>
+                                <a href="blogs-list.html" class="btn btn-secondary">View more</a>
                             </div>
                         </div>
                     </div>
@@ -833,32 +865,31 @@
                     <div class="call-content">
                         <div class="page-title text-right">
                             <div class="title-inner">
-                                <h1>همین الان تماس بگیر</h1>
+                                <h1>Call now</h1>
                             </div>
                         </div>
                         <div class="form-content">
                             <div class="inputgroup">
-                                <label>نام و نام خانوادگی شما</label>
+                                <label>Your name and surname</label>
                                 <input type="text" class="input" placeholder="">
                             </div>
                             <div class="inputgroup">
-                                <label>شماره همراه</label>
+                                <label>Phone number</label>
                                 <input type="number" class="input" placeholder="">
                             </div>
                             <div class="inputgroup">
-                                <label>ایمیل</label>
+                                <label>Email</label>
                                 <input type="email" class="input" placeholder="">
                             </div>
                         </div>
                         <div class="btns-group">
-                            <button class="btn btn-secondary">ارسال اطلاعات</button>
-                            <button class="btn btn-primary">دریافت مشاوره رایگان</button>
+                            <button class="btn btn-secondary">Sending information</button>
+                            <button class="btn btn-primary">Get a free consultation</button>
                         </div>
                     </div>
                     <div class="img-content">
                         <div class="img-inner">
-                            <h6 data-aos="fade-up">همکاران ما آماده پاسخ به سوالات شما و ارائه مشاوره رایگان هستند
-                            </h6>
+                            <h6>Our colleagues are ready to answer your questions and provide free advice</h6>
                         </div>
                     </div>
                 </div>
@@ -872,7 +903,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-book-alt"></i></span>کتب و تالیفات</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-book-alt"></i></span>Books & compilations</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -882,7 +913,7 @@
                             <img src="images/books/book.png" alt="book-cover">
                         </div>
                         <div class="info">
-                            <h4>اگر اول نباشی، آخر می‌شوی</h4>
+                            <h4>If you are not first, you will be last</h4>
                         </div>
                     </div>
                 </div>
@@ -892,8 +923,7 @@
                             <img src="images/books/book.png" alt="book-cover">
                         </div>
                         <div class="info">
-                            <h4>عامل ارزش‌ها؛ راز موفقيت
-                                و جهش</h4>
+                            <h4>the factor of values; The secret of success and leap</h4>
                         </div>
                     </div>
                 </div>
@@ -903,7 +933,7 @@
                             <img src="images/books/book.png" alt="book-cover">
                         </div>
                         <div class="info">
-                            <h4>کواکتیوکوچینگ</h4>
+                            <h4>Quacticoaching</h4>
                         </div>
                     </div>
                 </div>
@@ -913,8 +943,7 @@
                             <img src="images/books/book.png" alt="book-cover">
                         </div>
                         <div class="info">
-                            <h4>دقيقاچه بگوييدتاحرفتان را
-                                گوش كنند؟</h4>
+                            <h4>What exactly should you say so that they listen to you?</h4>
                         </div>
                     </div>
                 </div>
@@ -924,7 +953,7 @@
                             <img src="images/books/book.png" alt="book-cover">
                         </div>
                         <div class="info">
-                            <h4>اگر اول نباشی، آخر می‌شوی</h4>
+                            <h4>Quacticoaching</h4>
                         </div>
                     </div>
                 </div>
@@ -937,7 +966,7 @@
         <div class="container">
             <div class="page-title">
                 <div class="title-inner">
-                    <h1><span class="icon"><i class="fi fi-rr-users"></i></span>ایونت‌ها و همایش‌ها</h1>
+                    <h1><span class="icon"><i class="fi fi-rr-users"></i></span>Events & conferences</h1>
                 </div>
             </div>
             <div class="section-inner">
@@ -951,7 +980,8 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3><i class="fi fi-sr-circle-small"></i>گزارش اولین جلسه بیزینس کوچینگ رهبران</h3>
+                                    <h3><i class="fi fi-sr-circle-small"></i>Report of the first business coaching
+                                        meeting of leaders</h3>
                                     <div class="date"><i class="fi fi-rr-calendar"></i>10/21/2049</div>
                                 </div>
                             </a>
@@ -966,7 +996,8 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3><i class="fi fi-sr-circle-small"></i>گزارش از ضیافت دوازدهم میت MEET</h3>
+                                    <h3><i class="fi fi-sr-circle-small"></i>Report on the twelfth feast of the MEET
+                                    </h3>
                                     <div class="date"><i class="fi fi-rr-calendar"></i>10/21/2049</div>
                                 </div>
                             </a>
@@ -981,7 +1012,8 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3><i class="fi fi-sr-circle-small"></i>گزارش از ضیافت یازدهم میت MEET</h3>
+                                    <h3><i class="fi fi-sr-circle-small"></i>Report on the twelfth feast of the MEET
+                                    </h3>
                                     <div class="date"><i class="fi fi-rr-calendar"></i>10/21/2049</div>
                                 </div>
                             </a>
@@ -996,7 +1028,7 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3><i class="fi fi-sr-circle-small"></i>گزارش همایش رشد کسب‌وکار 3</h3>
+                                    <h3><i class="fi fi-sr-circle-small"></i>Business growth conference report 3</h3>
                                     <div class="date"><i class="fi fi-rr-calendar"></i>10/21/2049</div>
                                 </div>
                             </a>
@@ -1011,7 +1043,8 @@
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h3><i class="fi fi-sr-circle-small"></i>گزارش همایش بازآفرینی مدل کسب‌وکار</h3>
+                                    <h3><i class="fi fi-sr-circle-small"></i>Report of the business model regeneration
+                                        conference</h3>
                                     <div class="date"><i class="fi fi-rr-calendar"></i>10/21/2049</div>
                                 </div>
                             </a>
@@ -1034,25 +1067,24 @@
                             </a>
                         </div>
                         <div class="desc">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
-                                است، چاپگرها و متون بلکه روزنامه می باشد.</p>
+                            <p>produce dollar fur week particularly mile upon create train enough around gate seldom
+                                noun born protection birth origin period grabbed cry old present seat</p>
                         </div>
-
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="box-links">
-                            <h4 class="f-title">دسترسی سریع</h4>
+                            <h4 class="f-title">Quick Links</h4>
                             <ul class="links">
-                                <li><a href="#">خانه</a></li>
-                                <li><a href="#">درباره‌ی ما</a></li>
-                                <li><a href="#">تماس با ما</a></li>
-                                <li><a href="#">قوانین</a></li>
-                                <li><a href="#">بلاگ خبری</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Private & policy</a></li>
+                                <li><a href="#">Blogs</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <h4 class="f-title">با ما در ارتباط باشید</h4>
+                        <h4 class="f-title">Be in touch with us</h4>
                         <div class="social-icons">
                             <ul>
                                 <li><a href="#"><i class="fi fi-brands-instagram"></i></a></li>
@@ -1076,7 +1108,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <span>تمامی حقوق برای مغزم محفوظ می باشد</span>
+                <span>Made with love us</span>
             </div>
         </div>
     </footer>

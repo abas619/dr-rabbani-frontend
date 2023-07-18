@@ -1,0 +1,66 @@
+/*#region ----------------- Partnerships */
+.partnership-section {
+  background-color: white;
+  padding: 20px 0 100px 0;
+  position: relative;
+  margin-top: 140px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/curve-top.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 70%;
+    height: 220px;
+    background-color: rgba($color: $secondary, $alpha: 0.9);
+    border-radius: 20px 0 0 120px;
+  }
+  .section-inner {
+    position: relative;
+    margin-top: 3.5rem;
+    background-color: white;
+    box-shadow: $boxshadow;
+    border-radius: 200px;
+    padding: 15px 30px;
+    z-index: 20;
+  }
+}
+
+.swiper-partnerships {
+  .swiper-slide {
+    .thumb {
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .partnership-section {
+    &::after {
+      height: 200px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .partnership-section {
+    .section-inner {
+      padding: 10px 20px;
+    }
+  }
+}
+
+/*#endregion -------------- Partnerships */
