@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fa" class="no-js" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffb200" />
+    <meta name="msapplication-navbutton-color" content="#ffb200">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffb200">
+    <title>Dr. Rabani | درباره مدرس</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <!-- Font Icons -->
+    <link href="css/all.rounded.css" rel="stylesheet" type="text/css" />
+    <link href="plugins/aos/aos.css" rel="stylesheet" type="text/css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/small-icon.png" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo-114x114.png" />
+
+</head>
+
+<body class="en">
+
+    <!-- Header -->
+    <header class="myNavbar">
+        <div class="container-lg">
+            <div class="header-inner">
+                <div class="mobile-links">
+                    <button type="button" class="btn-mobile-menu"><i class="fi fi-rr-menu-burger"></i></button>
+                    <!-- Sidebar Menu -->
+                    <div id="sidebar-menu">
+                        <div class="sidebar-header">
+                            <div class="sidebar-logo">
+                                <a href="index.html">
+                                    <img src="images/logo.png" class="sidebarlogo" alt="Grand Bimeh Logo">
+                                </a>
+                            </div>
+                            <div class="sidebar-close">
+                                <button class="btn-close-menu"><i class="fi fi-rr-cross"></i></button>
+                            </div>
+                        </div>
+                        <div class="sidebar-sign">
+                            <!-- برای وقتی که ورود/ثبت نام میخواد انجام بده -->
+                            <div class="sign">
+                                <button type="button" class="btn btn-secondary icon-right" data-toggle="modal"
+                                    data-target="#modal-sign">
+                                    <i class="fi fi-rr-sign-out"></i>
+                                    <span>ورود / ثبت نام</span>
+                                </button>
+                            </div>
+                            <!-- برای وقتی که ثبت نام/ ورود کرد -->
+                            <!-- <div class="login">
+                                    <a href="#"><span>سمیر دغاغله</span><i class="fi fi-rr-angle-small-left"></i></a>
+                                </div> -->
+                        </div>
+                        <ul class="category-list">
+                            <li class="item"><a href="#">صفحه اصلی</a></li>
+                            <li class="item"><a href="#">بلاگ</a></li>
+                            <li class="item"><a href="#">درباره مدرس</a></li>
+                            <li class="item"><a href="#">تماس با ما</a></li>
+                        </ul>
+                        <div class="collapse-item">
+                            <button class="btn btn-primary collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-category-01" aria-expanded="false"
+                                aria-controls="collapse-category-01">
+                                <span class="name">دوره‌ها</span>
+                                <span class="icon"></span>
+                            </button>
+                            <div class="collapse" id="collapse-category-01">
+                                <div class="card">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">مشاهده همه</span>
+                                                <span class="desc"><i class="fi fi-rr-angle-small-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">دوره 1</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="name">دوره 2</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay-back"></div>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="links">
+                    <ul class="link-list">
+                        <li class="item"><a href="index.html">صفحه اصلی</a>
+                        </li>
+                        <li class="item">
+                            <a href="#">دوره‌ها<i class="fi fi-rr-angle-small-down"></i></a>
+                            <ul class="sub-list">
+                                <li class="sub-item"><a href="#">تخصص ۱</a></li>
+                                <li class="sub-item"><a href="#">تخصص ۲</a></li>
+                                <li class="sub-item"><a href="#">تخصص ۳</a></li>
+                            </ul>
+                        </li>
+                        <li class="item"><a href="blog-list.html">بلاگ</a>
+                        </li>
+                        <li class="item"><a href="about.html">درباره مدرس</a></li>
+                        <li class="item"><a href="contact-us.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="nav-action">
+                    <div class="search" id="desktop-search-content">
+                        <button type="button" class="btn-show-search" id="btn-desktop-search"><i
+                                class="fi fi-rr-search"></i></button>
+                        <div class="search-content">
+                            <div class="search-inputgroup">
+                                <input type="text" class="input" id="search-input" placeholder="جستجو...">
+                                <button type="button" class="btn-search-close"><i class="fi fi-rr-cross"></i></button>
+                                <button type="submit" class="btn-search-sumbit"><i class="fi fi-rr-search"></i></button>
+                            </div>
+                            <div class="result" id="search-result">
+                                <ul>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-pencil"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-apps"></i>عنوان جستجو</a></li>
+                                    <li><a href="#"><i class="fi fi-rr-search"></i>عنوان جستجو</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <select class="form-select">
+                            <option value="0" selected>Fa</option>
+                            <option value="1">En</option>
+                            <option value="2">Arb</option>
+                        </select>
+                    </div>
+                    <div class="user-login">
+                        <!-- Sign -->
+                        <div class="sign">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-sign">
+                                <span>ورود</span>
+                                <span>ثبت نام</span>
+                            </button>
+                        </div>
+                        <!-- Login -->
+                        <!-- <div class="login">
+                            <div class="user-link">
+                                <div class="icon"><i class="fi fi-rr-user"></i></div>
+                            </div>
+                            <ul class="user-menu">
+                                <li><a href="user-profile.html"><i class="fi fi-rr-user"></i>پروفایل
+                                        من</a></li>
+                                <li><a href="#"><i class="fi fi-rr-computer"></i>دوره‌های من</a>
+                                </li>
+                                <li><a href="#"><i class="fi fi-rr-credit-card"></i>پرداخت ها</a></li>
+                                <li><a href="#"><i class="fi fi-rr-sign-in-alt"></i>خروج</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="line"></div>
+        <div class="container">
+            <div class="inner">
+                <h2>معرفی خلاصه</h2>
+                <h3>دکتر محمد مهدی ربانی</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="master-page">
+        <div class="container">
+            <div class="about-section mb-4">
+                <div class="grid-layout">
+                    <div class="grid-text">
+                        <div class="page-title text-right mb-4">
+                            <div class="title-inner">
+                                <h1>سوابق کارآفرینی</h1>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>مؤسس انتشارات نگاه نوین</li>
+                            <li>مدیر مسئول و صاحب امتیاز مجله خلاقیت</li>
+                            <li>مؤسس شرکت تینو (دانش بنیان)</li>
+                            <li>مؤسس پلتفرم آموزشی ویدان</li>
+                            <li>مؤسس پلتفرم coachh.ir</li>
+                            <li>مؤسس داروسازی دیموند (دانش بنیان)</li>
+                            <li>مؤسس شرکت مواد غذایی طبیعت سبز بوتیا پارس</li>
+                            <li>مؤسس و مالک گروه ساختمانی سان و دارای پروانه انبوه سازی ساختمان (1392-1393)</li>
+                            <li>مؤسس شرکت تجاری اسنا</li>
+                            <li>مؤسس آموزشگاه فنی و حرفه‌ای آزاد راهبران علم</li>
+                        </ul>
+                    </div>
+                    <div class="grid-image">
+                        <div class="image-content">
+                            <div class="img-inner">
+                                <img src="images/bg/rabani-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-section mb-4">
+                <div class="page-title text-right mb-4">
+                    <div class="title-inner">
+                        <h1>Scientific records</h1>
+                    </div>
+                </div>
+                <div class="topics-list">
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        Bachelor's degree in civil engineering, master's degree and doctorate in management
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        نویسنده دو عنوان کتاب دانشگاهی و مترجم چهار کتاب پرفروش در حوزه کوچینگ و کسب و کار
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        دانش آموخته دوره استراتژی شرکتی در دانشگاه بین المللی LAUREATE اسپانیا (به صورت حضوری)
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها است
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از می باشد
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                    </div>
+                    <div class="item">
+                        <div class="icon"><i class="fi fi-rr-check"></i></div>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ نیست
+                    </div>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                    تمام اینها می‌باشد.</p>
+            </div>
+            <div class="about-section mb-4">
+                <div class="page-title text-right mb-4">
+                    <div class="title-inner">
+                        <h1>سوابق تجربی</h1>
+                    </div>
+                </div>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد.</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                    آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که
+                    تمام اینها می‌باشد.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="desc">
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+                                است، چاپگرها و متون بلکه روزنامه می باشد.</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="box-links">
+                            <h4 class="f-title">دسترسی سریع</h4>
+                            <ul class="links">
+                                <li><a href="#">خانه</a></li>
+                                <li><a href="#">درباره‌ی ما</a></li>
+                                <li><a href="#">تماس با ما</a></li>
+                                <li><a href="#">قوانین</a></li>
+                                <li><a href="#">بلاگ خبری</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="f-title">با ما در ارتباط باشید</h4>
+                        <div class="social-icons">
+                            <ul>
+                                <li><a href="#"><i class="fi fi-brands-instagram"></i></a></li>
+                                <li><a href="#"><i class="fi fi-brands-twitter"></i></a></li>
+                                <li><a href="#"><i class="fi fi-brands-telegram"></i></a></li>
+                                <li><a href="#"><i class="fi fi-rr-envelope"></i></a></li>
+                                <li><a href="#"><i class="fi fi-brands-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="certificate">
+                            <ul>
+                                <li><a href="#"><img src="https://via.placeholder.com/150x150/ccc.png"
+                                            alt="logo-name"></a></li>
+                                <li><a href="#"><img src="https://via.placeholder.com/150x150/ccc.png"
+                                            alt="logo-name"></a></li>
+                                <li><a href="#"><img src="https://via.placeholder.com/150x150/ccc.png"
+                                            alt="logo-name"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>تمامی حقوق برای مغزم محفوظ می باشد</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="plugins/swiperjs/swiper-initial.js"></script>
+    <script src="plugins/aos/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

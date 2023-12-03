@@ -20,10 +20,14 @@ body.en {
   .myNavbar {
     .links {
       margin-right: 0;
-      margin-left: 20px;
-      .link-list .item .sub-list {
-        right: unset;
-        left: 0;
+      margin-left: 10px;
+      .link-list .item {
+        margin-left: 0;
+        margin-right: 24px;
+        .sub-list {
+          right: unset;
+          left: 0;
+        }
       }
     }
     .user-login {
@@ -33,7 +37,8 @@ body.en {
             border-radius: 10px 0 0 10px;
           }
           &:last-child {
-            border-radius: 0 10px 10px 0;
+            border-radius: 10px;
+            right: 10px;
           }
         }
       }
@@ -49,9 +54,12 @@ body.en {
         }
       }
     }
+    .language {
+      margin: 0 10px 0 0;
+    }
   }
   #desktop-search-content {
-    margin: 0 15px 0 0;
+    margin: 0 10px 0 0;
     .search-inputgroup {
       .input {
         padding: 3px 85px 3px 15px;
@@ -308,6 +316,18 @@ body.en {
     }
     .certificate ul li {
       margin: 5px 10px 5px 0;
+    }
+  }
+  .about-section {
+    .grid-layout {
+      .grid-text {
+        padding-left: 0;
+        padding-right: 30px;
+      }
+    }
+    ul {
+      padding-right: 0;
+      padding-left: 30px;
     }
   }
 }

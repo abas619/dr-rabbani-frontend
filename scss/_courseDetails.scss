@@ -180,8 +180,8 @@
       display: grid;
       grid-template-columns: 38px auto;
       align-items: center;
-      margin: 5px 0;
-      font-size: 14px;
+      margin: 6px 0;
+      font-size: 16px;
       font-weight: 400;
       color: $textGrey;
       user-select: none;
@@ -577,7 +577,7 @@
     }
     .topics-list {
       li {
-        font-size: 13px;
+        font-size: 14px;
         grid-template-columns: 34px auto;
         .icon {
           width: 24px;
@@ -700,8 +700,9 @@
     }
     .topics-list {
       li {
-        font-size: 12px;
+        font-size: 13px;
         grid-template-columns: 30px auto;
+        margin: 5px 0;
         .icon {
           width: 20px;
           height: 20px;
