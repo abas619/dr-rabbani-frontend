@@ -1,0 +1,33 @@
+/*#region ----------------- Pagination */
+.pagination {
+  margin-top: 15px;
+  .page-item {
+    &.active {
+      .page-link {
+        color: white;
+        background-color: $secondary;
+      }
+    }
+    &.disabled {
+      .page-link {
+        color: $textSilver;
+      }
+    }
+    &:first-child {
+      .page-link {
+        border-radius: 0 12px 12px 0;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border-radius: 12px 0 0 12px;
+      }
+    }
+  }
+  .page-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: $textDark;
+  }
+}
+/*#endregion -------------- Pagination */

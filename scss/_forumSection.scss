@@ -1,0 +1,854 @@
+/*#region ----------------- Forums */
+.forum-header {
+  background-color: white;
+  box-shadow: $boxshadow;
+  position: relative;
+  z-index: 500;
+  .inner {
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 80px auto;
+  }
+  .logo {
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .actions {
+    padding-right: 20px;
+    @include displayFlex(flex, center, flex-end);
+  }
+  .search {
+    position: relative;
+    .search-inner {
+      display: grid;
+      grid-template-columns: 250px 38px;
+    }
+    .input {
+      width: 100%;
+      background-color: $background;
+      border-radius: 0 50px 50px 0;
+      padding: 8px 10px;
+      font-size: 14px;
+      color: $textDark;
+      border: 1px solid $borderColor;
+      border-left: none;
+      height: 38px;
+    }
+    .btn-search {
+      width: 38px;
+      height: 38px;
+      @include displayFlex(flex, center, center);
+      font-size: 18px;
+      color: $textDark;
+      background-color: white;
+      border-radius: 50px 0 0 50px;
+      border: 1px solid $borderColor;
+    }
+  }
+  .user {
+    margin-right: 20px;
+    .btn-login {
+      height: 38px;
+      font-size: 14px;
+      background-color: $secondary;
+      color: white;
+      border-radius: 50px;
+      border: none;
+      padding: 5px 20px;
+      .fi {
+        margin-left: 10px;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+}
+
+.topic-header {
+  margin: 30px 0 20px 0;
+  .inner {
+    display: grid;
+    grid-template-columns: auto 300px;
+    background-color: $secondary;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .links-section {
+    @include displayFlex(flex, center, flex-start);
+    .links {
+      @include displayFlex(flex, center, flex-start);
+      margin-right: 20px;
+      .sub-link {
+        margin-left: 6px;
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          display: block;
+          padding: 5px;
+          color: white;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    .btn-dropdown {
+      padding: 10px 40px 10px 20px;
+      height: unset;
+      font-size: 14px;
+      color: white;
+      border: 1px solid rgba($color: white, $alpha: 0.7);
+      box-shadow: none;
+      background-color: rgba($color: white, $alpha: 0.15);
+      border-radius: 50px;
+      position: relative;
+      .fi {
+        margin-left: 10px;
+        font-size: 20px;
+        position: absolute;
+        right: 12px;
+        top: 10px;
+      }
+      &:hover,
+      &:focus {
+        background-color: $background;
+        color: $textDark;
+        box-shadow: none;
+      }
+    }
+    .dropdown-menu {
+      border-radius: 10px;
+      .dropdown-item {
+        font-size: 14px;
+        text-align: right;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        &:hover {
+          background-color: $background;
+        }
+        &:focus {
+          background-color: $secondary;
+        }
+      }
+    }
+  }
+  .topics-count {
+    padding-right: 15px;
+    ul {
+      li {
+        font-size: 13px;
+        color: white;
+      }
+    }
+  }
+}
+
+.forum-body {
+  .pagetitle {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: $textDark;
+      margin-bottom: 0;
+      .fi {
+        margin-left: 10px;
+        font-size: 20px;
+        color: $textGrey;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  .collapse-item {
+    margin-bottom: 15px;
+    .btn-question-collapse {
+      width: 100%;
+      border: 1px solid $borderColor;
+      border-radius: 12px 12px 0 0;
+      background-color: rgba($color: #000000, $alpha: 0.05);
+      display: grid;
+      grid-template-columns: auto 350px;
+      align-items: center;
+      text-align: right;
+      padding: 15px 20px 15px 10px;
+      transition: all 0.3s ease-in-out;
+      position: relative;
+      .name {
+        color: $textDark;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 15px;
+      }
+      .status {
+        font-size: 14px;
+        font-weight: 500;
+        color: $textGrey;
+        padding-left: 50px;
+      }
+      .icon {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        margin-right: auto;
+        @include displayFlex(flex, center, center);
+        &::before {
+          content: "\f4c7";
+          font-family: $iconFontRegular;
+          font-size: 22px;
+          color: $textGrey;
+        }
+      }
+      &.collapsed {
+        .icon {
+          &::before {
+            content: "\f539";
+          }
+        }
+      }
+    }
+    .card-body {
+      background-color: white;
+      border: 1px solid $borderColor;
+      border-top: none;
+      padding: 0 15px;
+      &.rounded {
+        border-radius: 0 0 12px 12px !important;
+      }
+    }
+    .see-more {
+      background-color: white;
+      border: 1px solid $borderColor;
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      text-align: center;
+      .btn-link {
+        display: inline-block;
+        padding: 10px;
+        font-size: 14px;
+        color: $secondary;
+        text-decoration: underline 1px solid $secondary !important;
+        .fi {
+          margin-right: 5px;
+          font-size: 16px;
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  }
+  .item {
+    display: grid;
+    grid-template-columns: auto 350px;
+    border-bottom: 1px solid $borderColor;
+    padding: 15px 0;
+    &:last-child {
+      border-bottom: none;
+    }
+    .data {
+      display: grid;
+      grid-template-columns: 44px auto;
+      padding-left: 15px;
+      .icon {
+        @include displayFlex(flex, center, center);
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 20px;
+        color: $textSilver;
+        background-color: rgba($color: #000000, $alpha: 0.05);
+      }
+      .info {
+        padding-right: 10px;
+        h2 {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 5px;
+          @include textTruncate(1);
+          a {
+            color: $textDark;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
+        .status {
+          @include displayFlex(flex, center, flex-start);
+          flex-wrap: wrap;
+          li {
+            margin-left: 10px;
+            color: $textGrey;
+            span {
+              color: $textDark;
+            }
+          }
+        }
+      }
+    }
+    .last-post {
+      h2 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        @include textTruncate(1);
+        margin-bottom: 10px;
+        a {
+          font-size: 14px;
+          line-height: normal;
+          color: $secondary;
+          .fi {
+            margin-left: 5px;
+            font-size: 15px;
+            color: $textGrey;
+            position: relative;
+            top: 3px;
+          }
+        }
+        &.answer {
+          a .fi {
+            color: $success;
+          }
+        }
+        &.closed {
+          a .fi {
+            color: $error;
+          }
+        }
+        &.waiting {
+          a .fi {
+            color: $textSilver;
+          }
+        }
+      }
+      .user-name,
+      .date {
+        font-size: 13px;
+        color: $textGrey;
+        span {
+          color: $textDark;
+        }
+      }
+    }
+  }
+  .links-list {
+    padding: 15px 0;
+    li {
+      a {
+        display: inline-block;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $textDark;
+        span {
+          color: $textGrey;
+          margin-right: 5px;
+          font-size: 14px;
+          font-weight: 400px;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.forum-footer {
+  background-color: white;
+  margin-top: 50px;
+  padding: 50px 0 0 0;
+  .logo {
+    width: 110px;
+    a {
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .links {
+    margin: 20px 0;
+    ul {
+      @include displayFlex(flex, center, flex-start);
+      flex-wrap: wrap;
+      li {
+        a {
+          display: block;
+          padding: 5px 0 5px 20px;
+          font-size: 16px;
+          font-weight: 500;
+          color: $textDark;
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+  .status {
+    border-radius: 12px;
+    background-color: $background;
+    border: 1px solid $borderColor;
+    padding: 15px;
+    ul {
+      list-style: disc;
+      padding-right: 20px;
+      li {
+        color: $textGrey;
+        span,
+        strong {
+          color: $textDark;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    border-top: 1px solid $borderColor;
+    margin-top: 30px;
+    padding: 30px 0 20px 0;
+    p {
+      color: $textGrey;
+      font-size: 14px;
+    }
+  }
+}
+
+.forum-details-header {
+  .inner {
+    border: 1px solid $borderColor;
+    border-radius: 15px;
+    padding: 15px;
+    @include displayFlex(flex, center, space-between);
+    background-color: white;
+  }
+  .title {
+    h2 {
+      @include textTruncate(1);
+      font-size: 16px;
+      color: $textDark;
+    }
+    .list {
+      @include displayFlex(flex, center, flex-start);
+      flex-wrap: wrap;
+      li {
+        font-size: 14px;
+        color: $textGrey;
+        margin: 5px 0 5px 20px;
+        span {
+          color: $textDark;
+          margin-right: 5px;
+        }
+        .fi {
+          font-size: 16px;
+          color: $textSilver;
+          margin-left: 5px;
+          position: relative;
+          top: 4px;
+        }
+      }
+    }
+  }
+  .btns-action {
+    .btn {
+      white-space: nowrap;
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+    }
+  }
+}
+
+.forum-details-body {
+  margin-top: 15px;
+  .comment-content {
+    display: grid;
+    grid-template-columns: 250px auto;
+    margin-bottom: 10px;
+  }
+  .side-comment {
+    background-color: rgba($color: #000000, $alpha: 0.07);
+    border: 1px solid $borderColor;
+    border-left: none;
+    border-radius: 0 15px 15px 0;
+    padding: 20px;
+    .thumb {
+      width: 54px;
+      height: 54px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: rgba($color: #000000, $alpha: 0.1);
+      @include displayFlex(flex, center, center);
+      font-size: 28px;
+      color: $textGrey;
+    }
+    .user-info {
+      margin-top: 10px;
+      h5 {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 800;
+        color: $textDark;
+      }
+      ul {
+        margin-top: 20px;
+        li {
+          margin-top: 8px;
+          color: $textGrey;
+          font-weight: 500;
+          span {
+            color: $textDark;
+          }
+          .fi {
+            margin-left: 10px;
+            color: $textSilver;
+          }
+        }
+      }
+    }
+  }
+  .main-comment {
+    border: 1px solid $borderColor;
+    border-radius: 15px 0 0 15px;
+    background-color: white;
+    .inner {
+      padding: 20px 20px 60px 20px;
+      height: 100%;
+      position: relative;
+    }
+    .title {
+      margin-bottom: 15px;
+      h2 {
+        font-size: 16px;
+        color: $textDark;
+        line-height: 28px;
+      }
+      .list {
+        @include displayFlex(flex, center, flex-start);
+        flex-wrap: wrap;
+        li {
+          font-size: 14px;
+          color: $textGrey;
+          margin: 5px 0 5px 20px;
+          span {
+            color: $textDark;
+            margin-right: 5px;
+          }
+          .fi {
+            font-size: 16px;
+            color: $textSilver;
+            margin-left: 5px;
+            position: relative;
+            top: 4px;
+          }
+        }
+      }
+    }
+    .details {
+      p {
+        text-align: justify;
+        color: $textDark;
+        font-size: 14px;
+      }
+    }
+    .quote-box {
+      background-color: rgba($color: $secondary, $alpha: 0.1);
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      p {
+        text-align: justify;
+        color: $textDark;
+        margin-bottom: 0;
+        font-size: 14px;
+        @include textTruncate(2);
+        .fi {
+          color: $secondary;
+          margin-left: 10px;
+          font-size: 20px;
+          position: relative;
+          top: 5px;
+        }
+      }
+    }
+    .link-box {
+      background-color: rgba($color: $primary, $alpha: 0.12);
+      border-right: 5px solid $primary;
+      padding: 10px;
+      border-radius: 12px;
+      margin: 15px 0;
+      a {
+        font-size: 14px;
+      }
+    }
+    .alert {
+      margin: 15px 0;
+      border-radius: 12px;
+    }
+    .btns-action {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      width: 100%;
+      text-align: left;
+      .btn-link {
+        background-color: $background;
+        border: 1px solid $borderColor;
+        border-radius: 50px;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 2px 15px 2px 10px;
+        .fi {
+          margin-left: 8px;
+          font-size: 16px;
+          position: relative;
+          top: 3px;
+          color: $textGrey;
+        }
+        span {
+          display: inline-block;
+          background-color: $secondary;
+          padding: 0 10px;
+          border-radius: 50px;
+          color: white;
+          margin-right: 5px;
+        }
+        &.active {
+          background-color: $secondary;
+          color: white;
+          border-color: $secondary;
+          .fi {
+            color: rgba($color: white, $alpha: 0.7);
+          }
+          span {
+            background-color: white;
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .forum-header {
+    .inner {
+      grid-template-columns: 60px auto;
+    }
+  }
+  .topic-header {
+    .links-section {
+      .links {
+        display: none;
+      }
+    }
+  }
+  .forum-body {
+    .collapse-item {
+      .btn-question-collapse {
+        grid-template-columns: 100%;
+        .status {
+          display: none;
+        }
+        .name {
+          padding-left: 50px;
+        }
+      }
+    }
+    .item {
+      grid-template-columns: 100%;
+      .data {
+        padding-left: 0;
+        .info {
+          h2 {
+            font-size: 14px;
+          }
+          .status {
+            li {
+              font-size: 13px;
+            }
+          }
+        }
+        .icon {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .last-post {
+        display: none;
+      }
+    }
+  }
+  .forum-footer {
+    .logo {
+      margin: 0 auto;
+    }
+    .links {
+      ul {
+        justify-content: center;
+        li a {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+  .forum-details-body {
+    .comment-content {
+      grid-template-columns: 200px auto;
+    }
+    .side-comment {
+      padding: 10px;
+      .thumb {
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+      }
+      .user-info {
+        h5 {
+          font-size: 13px;
+        }
+        ul li {
+          font-size: 13px;
+        }
+      }
+    }
+    .main-comment {
+      .inner {
+        padding: 10px 10px 60px 10px;
+      }
+      .title {
+        margin-bottom: 10px;
+        h2 {
+          margin-bottom: 0.3rem;
+        }
+      }
+      .details,
+      .quote-box {
+        p {
+          font-size: 13px;
+        }
+      }
+      .btns-action {
+        left: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .forum-header {
+    .user {
+      margin-right: 10px;
+      .btn-login {
+        width: 38px;
+        height: 38px;
+        padding: 5px;
+        font-size: 18px;
+        @include displayFlex(flex, center, center);
+        span {
+          display: none;
+        }
+        .fi {
+          margin: 0;
+          top: unset;
+        }
+      }
+    }
+    .search {
+      .search-inner {
+        grid-template-columns: auto 38px;
+      }
+    }
+  }
+  .topic-header {
+    .inner {
+      grid-template-columns: auto 1fr;
+    }
+    .menu {
+      .btn-dropdown {
+        padding: 4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @include displayFlex(flex, center, center);
+        .text {
+          display: none;
+        }
+        .icon {
+          width: 100%;
+          height: 100%;
+        }
+        .fi {
+          margin-left: 0;
+          position: relative;
+          top: 5px;
+          right: unset;
+        }
+      }
+    }
+  }
+  .forum-details-header {
+    .inner {
+      flex-direction: column;
+    }
+    .btns-action,
+    .title {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+    .btns-action {
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+  .forum-details-body {
+    .comment-content {
+      grid-template-columns: 100%;
+    }
+    .side-comment {
+      border-radius: 15px 15px 0 0;
+      border-left: 1px solid $borderColor;
+      border-bottom: none;
+      display: grid;
+      grid-template-columns: 50px auto;
+      .thumb {
+        margin: 0;
+      }
+      .user-info {
+        padding-right: 10px;
+        h5 {
+          text-align: right;
+          margin-bottom: 0.2rem;
+        }
+        ul {
+          margin-top: 5px;
+          @include displayFlex(flex, center, flex-start);
+          flex-wrap: wrap;
+          li {
+            margin-left: 15px;
+            .fi {
+              margin-left: 5px;
+              top: 2px;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+    .main-comment {
+      border-radius: 0 0 15px 15px;
+      .inner {
+      }
+    }
+  }
+}
+
+/*#endregion -------------- Forums */
