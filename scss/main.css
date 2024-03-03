@@ -656,7 +656,7 @@ input[type=number] {
   width: 32px;
   height: 32px;
   border: none;
-  background-color: #e7e6e7;
+  background-color: #e2e2e2;
   border-radius: 50%;
   padding: 9px;
   font-size: 12px;
@@ -811,7 +811,7 @@ input[type=number] {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  border-bottom: 1px solid #e7e6e7;
+  border-bottom: 1px solid #e2e2e2;
 }
 #sidebar-menu .sidebar-header .sidebar-close .btn-close-menu {
   width: 45px;
@@ -937,7 +937,7 @@ input[type=number] {
   padding: 15px;
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid #e7e6e7;
+  border-bottom: 1px solid #e2e2e2;
   background-color: rgba(0, 0, 0, 0.02);
 }
 #sidebar-menu .collapse-item .card ul li:hover .name {
@@ -1695,7 +1695,7 @@ input[type=number] {
   overflow: hidden;
   position: relative;
   background-color: #f1f3f4;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 12px;
   padding: 15px;
   -webkit-user-select: none;
@@ -1775,7 +1775,7 @@ input[type=number] {
   transform: translateX(50%);
   width: calc(100% + 12px);
   height: 100%;
-  border: 2px solid #e7e6e7;
+  border: 2px solid #e2e2e2;
   border-top: 0;
   border-radius: 0 0 90px 90px;
   transition: all 0.3s ease-in-out;
@@ -1850,7 +1850,7 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: #e7e6e7;
+  color: #e2e2e2;
 }
 .card-status .info {
   position: relative;
@@ -2479,7 +2479,7 @@ input[type=number] {
   margin-bottom: 16px;
 }
 .inputgroup label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   display: block;
   margin-bottom: 5px;
@@ -2489,8 +2489,8 @@ input[type=number] {
   width: 100%;
   height: 48px;
   border-radius: 8px;
-  border: 1px solid #e7e6e7;
-  background-color: #f1f3f4;
+  border: 1px solid #e2e2e2;
+  background-color: white;
   padding: 5px 20px;
   color: #221e22;
   transition: all 0.3s ease-in-out;
@@ -2506,7 +2506,7 @@ input[type=number] {
   margin-bottom: 1.2rem;
 }
 .select-group label {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #221e22;
   display: block;
@@ -2517,20 +2517,27 @@ input[type=number] {
   font-size: 14px;
   font-weight: 400;
   border-radius: 8px;
-  border-color: #e7e6e7;
+  border-color: #e2e2e2;
 }
 .select-group .form-select:hover {
   box-shadow: none;
-  border-color: #979797;
+  border-color: #ffb200;
 }
 .select-group .form-select:focus {
   box-shadow: none;
   border-color: #ffb200;
 }
 
+.textarea-group label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #221e22;
+  display: block;
+  margin-bottom: 8px;
+}
 .textarea-group .textarea {
   width: 100%;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 10px;
   padding: 15px;
   font-size: 15px;
@@ -2770,7 +2777,7 @@ input[type=number] {
 }
 
 .card-coach-property {
-  border-left: 1px solid #e7e6e7;
+  border-left: 1px solid #e2e2e2;
   padding: 10px 30px;
 }
 .card-coach-property .card-inner {
@@ -2824,7 +2831,7 @@ input[type=number] {
   .property-section .card-coach-property {
     flex: 0 0 50%;
     width: 50%;
-    border-bottom: 1px solid #e7e6e7;
+    border-bottom: 1px solid #e2e2e2;
   }
   .property-section .card-coach-property:last-child {
     border-bottom: none;
@@ -3209,7 +3216,7 @@ input[type=number] {
   width: 100%;
   height: 54px;
   border-radius: 80px;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   background-color: #f1f3f4;
   color: #221e22;
   font-size: 16px;
@@ -4320,7 +4327,7 @@ input[type=number] {
   padding: 8px 10px;
   font-size: 14px;
   color: #221e22;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-left: none;
   height: 38px;
 }
@@ -4334,7 +4341,7 @@ input[type=number] {
   color: #221e22;
   background-color: white;
   border-radius: 50px 0 0 50px;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
 }
 .forum-header .user {
   margin-right: 20px;
@@ -4455,7 +4462,7 @@ input[type=number] {
 }
 .forum-body .collapse-item .btn-question-collapse {
   width: 100%;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 12px 12px 0 0;
   background-color: rgba(0, 0, 0, 0.05);
   display: grid;
@@ -4500,7 +4507,7 @@ input[type=number] {
 }
 .forum-body .collapse-item .card-body {
   background-color: white;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-top: none;
   padding: 0 15px;
 }
@@ -4509,7 +4516,7 @@ input[type=number] {
 }
 .forum-body .collapse-item .see-more {
   background-color: white;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-top: none;
   border-radius: 0 0 12px 12px;
   text-align: center;
@@ -4531,7 +4538,7 @@ input[type=number] {
 .forum-body .item {
   display: grid;
   grid-template-columns: auto 350px;
-  border-bottom: 1px solid #e7e6e7;
+  border-bottom: 1px solid #e2e2e2;
   padding: 15px 0;
 }
 .forum-body .item:last-child {
@@ -4680,7 +4687,7 @@ input[type=number] {
 .forum-footer .status {
   border-radius: 12px;
   background-color: #f1f3f4;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   padding: 15px;
 }
 .forum-footer .status ul {
@@ -4697,7 +4704,7 @@ input[type=number] {
 }
 .forum-footer .copyright {
   text-align: center;
-  border-top: 1px solid #e7e6e7;
+  border-top: 1px solid #e2e2e2;
   margin-top: 30px;
   padding: 30px 0 20px 0;
 }
@@ -4707,7 +4714,7 @@ input[type=number] {
 }
 
 .forum-details-header .inner {
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 15px;
   padding: 15px;
   display: flex;
@@ -4761,7 +4768,7 @@ input[type=number] {
 }
 .forum-details-body .side-comment {
   background-color: rgba(0, 0, 0, 0.07);
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-left: none;
   border-radius: 0 15px 15px 0;
   padding: 20px;
@@ -4803,7 +4810,7 @@ input[type=number] {
   color: #979797;
 }
 .forum-details-body .main-comment {
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 15px 0 0 15px;
   background-color: white;
 }
@@ -4893,7 +4900,7 @@ input[type=number] {
 }
 .forum-details-body .main-comment .btns-action .btn-link {
   background-color: #f1f3f4;
-  border: 1px solid #e7e6e7;
+  border: 1px solid #e2e2e2;
   border-radius: 50px;
   font-size: 14px;
   text-decoration: none;
@@ -5071,7 +5078,7 @@ input[type=number] {
   }
   .forum-details-body .side-comment {
     border-radius: 15px 15px 0 0;
-    border-left: 1px solid #e7e6e7;
+    border-left: 1px solid #e2e2e2;
     border-bottom: none;
     display: grid;
     grid-template-columns: 50px auto;
@@ -5130,6 +5137,20 @@ input[type=number] {
 }
 
 /*#endregion -------------- Pagination */
+/*#region ----------------- Modal */
+.modal-title .fi {
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+  color: #979797;
+}
+
+.modal-header .btn-close {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/*#endregion -------------- Modal */
 /*#region ----------------- Direction LTR */
 body.en {
   direction: ltr;

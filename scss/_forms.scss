@@ -2,7 +2,7 @@
 .inputgroup {
   margin-bottom: 16px;
   label {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     display: block;
     margin-bottom: 5px;
@@ -13,7 +13,7 @@
     height: 48px;
     border-radius: 8px;
     border: 1px solid $borderColor;
-    background-color: $background;
+    background-color: white;
     padding: 5px 20px;
     color: $textDark;
     transition: all 0.3s ease-in-out;
@@ -30,7 +30,7 @@
   position: relative;
   margin-bottom: 1.2rem;
   label {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     color: $textDark;
     display: block;
@@ -44,7 +44,7 @@
     border-color: $borderColor;
     &:hover {
       box-shadow: none;
-      border-color: $textSilver;
+      border-color: $primary;
     }
     &:focus {
       box-shadow: none;
@@ -54,6 +54,13 @@
 }
 
 .textarea-group {
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: $textDark;
+    display: block;
+    margin-bottom: 8px;
+  }
   .textarea {
     width: 100%;
     border: 1px solid $borderColor;
