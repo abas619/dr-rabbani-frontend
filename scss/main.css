@@ -335,12 +335,24 @@ input[type=number] {
   background-color: rgba(255, 255, 255, 0.15);
 }
 
+.icon-right {
+  padding-right: 2.6rem;
+}
 .icon-right .fi {
-  margin-left: 10px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
 }
 
+.icon-left {
+  padding-left: 2.6rem;
+}
 .icon-left .fi {
-  margin-right: 10px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 22px;
 }
 
 .btn-primary {
@@ -4129,29 +4141,33 @@ input[type=number] {
 }
 .page-header .inner h2 {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 .page-header .inner h3 {
   margin-bottom: 0;
-  font-size: 26px;
+  font-size: 28px;
   color: #ffb200;
+}
+.page-header.img-source::before {
+  background-image: url(../images/bg/page-header-3.jpg);
 }
 
 @media (max-width: 992px) {
   .page-header .inner h2 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .page-header .inner h3 {
-    font-size: 22px;
+    font-size: 26px;
   }
 }
 @media (max-width: 768px) {
   .page-header .inner h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
   .page-header .inner h3 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 /*#endregion -------------- Page Header */
@@ -5151,6 +5167,78 @@ input[type=number] {
 }
 
 /*#endregion -------------- Modal */
+/*#region ----------------- Source */
+.source-section {
+  margin: 30px 0 100px 0;
+}
+
+.card-source {
+  margin-bottom: 15px;
+}
+.card-source .card-inner {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 5px 20px rgba(34, 30, 34, 0.1);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 130px auto;
+}
+.card-source .thumb img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card-source .info {
+  padding-right: 15px;
+  padding-top: 8px;
+}
+.card-source .info h2 {
+  font-size: 18px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-source .data-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.card-source .data-list li {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #636063;
+}
+.card-source .data-list li .fi {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+  font-size: 16px;
+  color: #979797;
+}
+.card-source .btns-action {
+  margin-top: 10px;
+  text-align: left;
+}
+
+@media (max-width: 786px) {
+  .card-source .info h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 400px) {
+  .card-source .card-inner {
+    grid-template-columns: 100%;
+  }
+  .card-source .info {
+    padding-right: 0;
+  }
+}
+/*#endregion -------------- Source */
 /*#region ----------------- Direction LTR */
 body.en {
   direction: ltr;
@@ -5415,6 +5503,21 @@ body.en .about-section .grid-layout .grid-text {
 body.en .about-section ul {
   padding-right: 0;
   padding-left: 30px;
+}
+body.en .card-source .info {
+  padding-right: 0;
+  padding-left: 15px;
+}
+body.en .card-source .data-list li {
+  margin-left: 0;
+  margin-right: 15px;
+}
+body.en .card-source .data-list li .fi {
+  margin-left: 0;
+  margin-right: 5px;
+}
+body.en .card-source .btns-action {
+  text-align: right;
 }
 
 @media (max-width: 1400px) {

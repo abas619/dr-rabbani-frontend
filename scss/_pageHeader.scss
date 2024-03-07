@@ -59,13 +59,19 @@
     z-index: 10;
     h2 {
       color: white;
-      font-size: 20px;
+      font-size: 24px;
+      font-weight: 800;
       margin-bottom: 10px;
     }
     h3 {
       margin-bottom: 0;
-      font-size: 26px;
+      font-size: 28px;
       color: $primary;
+    }
+  }
+  &.img-source {
+    &::before {
+      background-image: url(../images/bg/page-header-3.jpg);
     }
   }
 }
@@ -73,10 +79,10 @@
   .page-header {
     .inner {
       h2 {
-        font-size: 18px;
+        font-size: 22px;
       }
       h3 {
-        font-size: 22px;
+        font-size: 26px;
       }
     }
   }
@@ -85,10 +91,10 @@
   .page-header {
     .inner {
       h2 {
-        font-size: 16px;
+        font-size: 20px;
       }
       h3 {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
   }

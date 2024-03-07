@@ -1,0 +1,74 @@
+/*#region ----------------- Source */
+.source-section {
+  margin: 30px 0 100px 0;
+}
+.card-source {
+  margin-bottom: 15px;
+  .card-inner {
+    background-color: white;
+    padding: 10px;
+    box-shadow: $boxshadow;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 130px auto;
+  }
+  .thumb {
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .info {
+    padding-right: 15px;
+    padding-top: 8px;
+    h2 {
+      font-size: 18px;
+      @include textTruncate(1);
+    }
+  }
+  .data-list {
+    @include displayFlex(flex, center, flex-start);
+    flex-wrap: wrap;
+    li {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      color: $textGrey;
+      .fi {
+        margin-left: 5px;
+        position: relative;
+        top: 3px;
+        font-size: 16px;
+        color: $textSilver;
+      }
+    }
+  }
+  .btns-action {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 786px) {
+  .card-source {
+    .info {
+      h2 {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .card-source {
+    .card-inner {
+      grid-template-columns: 100%;
+    }
+    .info {
+      padding-right: 0;
+    }
+  }
+}
+/*#endregion -------------- Source */

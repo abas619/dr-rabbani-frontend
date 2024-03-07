@@ -330,6 +330,24 @@ body.en {
       padding-left: 30px;
     }
   }
+
+  .card-source {
+    .info {
+      padding-right: 0;
+      padding-left: 15px;
+    }
+    .data-list li {
+      margin-left: 0;
+      margin-right: 15px;
+      .fi {
+        margin-left: 0;
+        margin-right: 5px;
+      }
+    }
+    .btns-action {
+      text-align: right;
+    }
+  }
 }
 
 @media (max-width: 1400px) {

@@ -38,13 +38,21 @@
   }
 }
 .icon-right {
+  padding-right: 2.6rem;
   .fi {
-    margin-left: 10px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
   }
 }
 .icon-left {
+  padding-left: 2.6rem;
   .fi {
-    margin-right: 10px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-size: 22px;
   }
 }
 
