@@ -5239,6 +5239,18 @@ input[type=number] {
   }
 }
 /*#endregion -------------- Source */
+/*#region ----------------- BreadCrumb */
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-right: 0;
+  padding-left: 8px;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item {
+  padding-right: 8px;
+  padding-left: 0;
+}
+
+/*#endregion -------------- BreadCrumb */
 /*#region ----------------- Direction LTR */
 body.en {
   direction: ltr;
